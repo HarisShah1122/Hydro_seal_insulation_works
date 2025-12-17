@@ -18,8 +18,15 @@ const ServicesFive = () => {
                     </div>
                     <div className="row gy-4 justify-content-center">
                         {servicesData?.slice(0, 3).map((data, id) => {
-							const words = data.title.split(' ');
-							const firstAndSecondWord = words.slice(0, 2).join(' ');
+                            // Map service IDs to translation keys
+                            const serviceKeys = {
+                                'thermal-insulation': { title: t('thermalTitle'), desc: t('thermalDescription') },
+                                'waterproofing-solutions': { title: t('waterproofingTitle'), desc: t('waterproofingDescription') },
+                                'hvac-insulation': { title: t('hvacTitle'), desc: t('hvacDescription') }
+                            };
+                            
+                            const serviceTranslation = serviceKeys[data.id] || { title: data.title.split(' ').slice(0, 2).join(' '), desc: data.des };
+                            
                             return (
                                 <div className="col-xl-4 col-lg-4 col-md-6" key={id}>
                                     <div className="services__five-single-service">
@@ -27,8 +34,8 @@ const ServicesFive = () => {
                                             {data.icon} 
                                         </div>
                                         <div className="services__five-single-service-content">
-                                            <h4>{firstAndSecondWord}</h4>
-                                            <p>{data.des}</p>
+                                            <h4>{serviceTranslation.title}</h4>
+                                            <p>{serviceTranslation.desc}</p>
                                             <Link href={`/services/${data.id}`} className="btn-three">{tCommon('readMore')}<i className="fas fa-chevron-right"></i></Link>
                                         </div>
                                     </div>

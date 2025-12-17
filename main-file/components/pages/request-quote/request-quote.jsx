@@ -1,7 +1,9 @@
 "use client"
 import { useState } from "react";
+import { useTranslations } from 'next-intl';
 
 const RequestQuoteMain = () => {
+    const t = useTranslations('requestQuotePage');
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',

@@ -1,4 +1,5 @@
 "use client"
+import { useTranslations } from 'next-intl';
 import SEO from "@/components/data/seo";
 import HeaderOne from "@/components/layout/headers/header/header-one";
 import BreadCrumb from "../common/breadcrumb";
@@ -6,6 +7,7 @@ import FooterTwo from "@/components/layout/footers/footer-two";
 import ScrollToTop from "../common/scroll/scroll-to-top";
 
 const QualityHSEPage = () => {
+    const t = useTranslations('qualityHSEPage');
     const qualityPolicies = [
         {
             title: "Quality Management System",
@@ -94,7 +96,7 @@ const QualityHSEPage = () => {
         <>
             <SEO pageTitle="Quality & HSE" />        
             <HeaderOne />
-            <BreadCrumb title="Quality & HSE" innerTitle="Quality & HSE" />
+            <BreadCrumb title="qualityHSE" innerTitle="Quality & HSE" />
             
             <div className="about__one section-padding">
                 <div className="container">
