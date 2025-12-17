@@ -1,45 +1,45 @@
-import ttlock1 from "../../public/assets/img/ttlocks/ttlock1.jpg";
-import ttlock2 from "../../public/assets/img/ttlocks/ttlock2.jpg";
-import ttlock3 from "../../public/assets/img/ttlocks/ttlock3.jpg";
-import ttlock4 from "../../public/assets/img/ttlocks/ttlock4.jpg";
+import project1 from "../../public/assets/img/hydro seal projects/Medical_Center_Main_Entrance.jpg";
+import project2 from "../../public/assets/img/hydro seal projects/Garden_City_School_Wide_Angle.jpg";
+import project3 from "../../public/assets/img/hydro seal projects/Residential_Villa_Street_View.jpg";
+import project4 from "../../public/assets/img/hydro seal projects/Rooftop_AC_Installation_Overview.jpg";
 
 export const TTLOCKS_VIDEO_PATH = "/assets/img/ttlocks/ttlock video1.mp4";
 
 export const ttlocksGalleryData = [
     {
-        id: 'ttlock1',
-        image: ttlock1,
-        title: "Advanced Smart Lock System",
-        description: "State-of-the-art smart lock technology featuring biometric access, mobile app control, and seamless integration with hotel management systems. Perfect for modern hospitality environments.",
-        alt: "Advanced Smart Lock System"
+        id: 'project1',
+        image: project1,
+        title: "Healthcare Facility Insulation",
+        description: "Comprehensive thermal insulation and waterproofing solution for a major medical center in Al Ain. This project included HVAC duct insulation, roof waterproofing, and acoustic treatment for patient comfort.",
+        alt: "Medical Center Insulation Project"
     },
     {
-        id: 'ttlock2',
-        image: ttlock2,
-        title: "Secure Digital Access Control",
-        description: "Enterprise-grade security solution with encrypted communication, audit trails, and remote management capabilities. Ensures maximum protection for your property and guests.",
-        alt: "Secure Digital Access Control"
+        id: 'project2',
+        image: project2,
+        title: "Educational Institution Project",
+        description: "Complete insulation system for Garden City School featuring energy-efficient thermal insulation, soundproofing for classrooms, and weather-resistant protective coatings for optimal learning environment.",
+        alt: "School Building Insulation"
     },
     {
-        id: 'ttlock3',
-        image: ttlock3,
-        title: "IoT-Enabled Lock Technology",
-        description: "Intelligent lock system powered by IoT connectivity, enabling real-time monitoring, automated check-in processes, and energy-efficient operations for sustainable hospitality management.",
-        alt: "IoT-Enabled Lock Technology"
+        id: 'project3',
+        image: project3,
+        title: "Luxury Residential Villa",
+        description: "Premium insulation and waterproofing services for a high-end residential property. Includes comprehensive thermal barrier installation, roof waterproofing, and decorative protective coatings.",
+        alt: "Residential Villa Insulation"
     },
     {
-        id: 'ttlock4',
-        image: ttlock4,
-        title: "Seamless Integration Platform",
-        description: "Comprehensive smart lock ecosystem that integrates effortlessly with PMS, booking systems, and guest services. Streamline operations and enhance guest experience with cutting-edge technology.",
-        alt: "Seamless Integration Platform"
+        id: 'project4',
+        image: project4,
+        title: "Commercial HVAC Insulation",
+        description: "Specialized rooftop HVAC system insulation for a commercial complex. Features advanced pipe insulation, condensation control, and energy-efficient solutions reducing operational costs by 25%.",
+        alt: "Rooftop HVAC Insulation Project"
     }
 ];
 
 export const ttlocksVideoData = {
-    title: "Smart Lock System Demo",
-    description: "Watch our comprehensive demonstration of the smart lock system in action, showcasing seamless integration and user-friendly operation.",
+    title: "Our Insulation Process",
+    description: "Discover our professional approach to insulation and waterproofing, showcasing quality materials, skilled craftsmanship, and commitment to excellence.",
     src: TTLOCKS_VIDEO_PATH,
-    alt: "Smart Lock System Demo Video"
+    alt: "Hydro Seal Insulation Process"
 };
 

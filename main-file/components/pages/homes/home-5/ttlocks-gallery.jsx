@@ -6,13 +6,13 @@ import VideoSection from './ttlocks-gallery/VideoSection';
 
 const TtlocksGallery = () => {
     const sectionData = useMemo(() => ({
-        subtitle: "Our Solutions",
-        title: "Smart Lock Technology",
-        description: "Experience our innovative smart lock solutions designed for modern hospitality and security needs."
+        subtitle: "Our Projects",
+        title: "Featured Insulation Projects",
+        description: "Explore our portfolio of successful insulation and waterproofing projects across the UAE. From healthcare facilities to residential properties, we deliver excellence in every project."
     }), []);
 
     return (
-        <section className="ttlocks__gallery section-padding" aria-label="Smart Lock Technology Gallery">
+        <section className="ttlocks__gallery section-padding" aria-label="Hydro Seal Featured Projects Gallery">
             <div className="container">
                 <header className="row justify-content-center text-center mb-50">
                     <div className="col-xl-7 col-lg-7 col-md-9">
@@ -23,7 +23,7 @@ const TtlocksGallery = () => {
                 </header>
                 <div className="row gy-5">
                     <GalleryGrid items={ttlocksGalleryData} />
-                    <VideoSection />
+                    {/* <VideoSection /> */}
                 </div>
             </div>
         </section>
