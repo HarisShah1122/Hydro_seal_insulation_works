@@ -74,6 +74,7 @@ const AboutFive = () => {
                         <div className="about__five-content">
                             <span className="subtitle-one">{t('title')}</span>
                             <h2>{t('subtitle')}</h2>
+                            <p className="mb-30">{t('description')}</p>
                             <div className="about__five-content-service">
                                 <div className="single-service">
                                     <i className="fas fa-check-circle"></i>
