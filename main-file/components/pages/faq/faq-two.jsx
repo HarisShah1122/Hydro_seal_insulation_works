@@ -1,24 +1,24 @@
 import React, { useState } from 'react';
 
-const FaqOne = () => {
+const FaqTwo = () => {
 
     const [activeIndex, setActiveIndex] = useState(0);
     const faqs = [
         {
-            question: "Do you have any Partnerships?",
-            answer: "es, we have several international partnerships as well as some  to help cater to our global clients. For more information, please contact our partnership division through this page."
+            question: "What materials do you use for insulation and waterproofing?",
+            answer: "We use only premium, internationally certified materials from reputable manufacturers including polyurethane foam, rock wool, fiberglass, elastomeric membranes, bituminous coatings, and specialized waterproofing systems. All materials meet UAE building codes and international standards."
         },
         {
-            question: "What is your approach to cybersecurity?",
-            answer: "We take a proactive and comprehensive approach to cybersecurity, implementing layered security measures to protect your data, applications, and networks from threats."
+            question: "Are you licensed and insured?",
+            answer: "Yes, we are fully licensed by Abu Dhabi Municipality and hold ISO 9001:2015, ISO 14001:2015, and ISO 45001:2018 certifications. We maintain comprehensive liability insurance and all our technicians are trained and certified professionals."
         },
         {
-            question: "Can I get a free consultation for  needs?",
-            answer: "We offer a free initial consultation to understand your business requirements and propose how our services can assist you. Please use our online booking system or call us directly to schedule your consultation."
+            question: "Do you offer warranty on your work?",
+            answer: "Absolutely! We provide warranties ranging from 2 to 10 years depending on the service and materials used. Our thermal insulation carries a 5-year warranty, waterproofing systems are backed by 5-10 years, and specialized coatings come with manufacturer warranties up to 10 years."
         },
         {
-            question: "How can I submit a support ticket?",
-            answer: "For current clients requiring technical support, please visit the Support section of our website and submit a ticket through our automated system. Our technical team aims to respond to all tickets within 24 hours."
+            question: "How much does insulation or waterproofing cost?",
+            answer: "Costs vary based on project scope, materials, and site conditions. Residential insulation typically ranges from AED 50-150 per square meter, while commercial projects are quoted based on specific requirements. Contact us for a detailed, no-obligation quote tailored to your project."
         },
     ];
     const toggleFaq = (index) => {
@@ -44,4 +44,4 @@ const FaqOne = () => {
     );
 };
 
-export default FaqOne;
+export default FaqTwo;

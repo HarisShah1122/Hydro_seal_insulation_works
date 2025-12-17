@@ -5,20 +5,20 @@ const FaqOne = () => {
     const [activeIndex, setActiveIndex] = useState(1);
     const faqs = [
         {
-            question: "What services do you offer?",
-            answer: "We specialize in a broad range of IT services, including software development, cloud services, cyber security, IT consulting, and tech support. Visit our Services page for detailed information."
+            question: "What insulation and waterproofing services do you offer?",
+            answer: "We provide comprehensive services including thermal insulation, waterproofing solutions, HVAC insulation, acoustic insulation, fire protection insulation, and specialized protective coatings for residential, commercial, and industrial projects across the UAE."
         },
         {
-            question: "How can I request a quote for my project?",
-            answer: "Fill out the contact form on this page, providing as many details as possible about your project. A representative will be in touch within one business day to discuss your needs and provide a tailored quote."
+            question: "How long does a typical insulation project take?",
+            answer: "Project duration varies based on size and complexity. A residential villa typically takes 3-5 days, while commercial buildings may require 1-3 weeks. We provide detailed timelines during the initial consultation and ensure minimal disruption to your daily operations."
         },
         {
-            question: "What is your process for client inquiries?",
-            answer: "We prioritize getting back to you quickly. After an inquiry is submitted, it'll be routed to the appropriate team, who will review your information and respond with the next steps or a request for further details."
+            question: "Do you provide free site inspection and quotation?",
+            answer: "Yes! We offer complimentary site inspections and detailed quotations for all projects. Our team will assess your requirements, recommend appropriate solutions, and provide a comprehensive cost estimate within 24-48 hours of the site visit."
         },
         {
-            question: "What are your hours of operation? ",
-            answer: "Our office is open Monday-Friday from 9 AM to 5 PM [Time Zone]. For support outside of these hours, please consult our support package details or use our emergency contact methods outlined above."
+            question: "What are your working hours and service areas?",
+            answer: "We operate Saturday to Thursday, 8:00 AM to 6:00 PM. Our primary service area is Al Ain and Abu Dhabi, but we also undertake projects across the UAE. Emergency waterproofing services are available 24/7 for urgent situations."
         },
     ];
     const toggleFaq = (index) => {
