@@ -40,7 +40,8 @@
     "more": "More",
     "ourTeam": "Our Team",
     "testimonials": "Testimonials",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "questionAndAns": "Question & Ans."
   },
   "home": {
     "welcome": "Welcome to Hydro Seal",
@@ -311,6 +312,22 @@
     "submit": "Submit Quote Request",
     "successMessage": "Thank you! We will contact you shortly with a quote.",
     "required": "*"
+  },
+  "testimonialPage": {
+    "title": "Client Testimonials",
+    "subtitle": "What Our Clients Say",
+    "testimonial1Text": "Hydro Seal provided exceptional insulation services for our medical facility. Their team was professional, efficient, and completed the project on time. The HVAC insulation has significantly reduced our energy costs.",
+    "testimonial1Name": "Ahmed Al Mazrouei",
+    "testimonial1Position": "Facilities Manager, Al Ain Medical Center",
+    "testimonial2Text": "We contracted Hydro Seal for waterproofing and thermal insulation of our educational facility. The quality of work exceeded our expectations, and the soundproofing has created a much better learning environment for our students.",
+    "testimonial2Name": "Sarah Al Dhaheri",
+    "testimonial2Position": "Director, Garden City School",
+    "testimonial3Text": "Outstanding service from start to finish. Hydro Seal installed thermal insulation and waterproofing for our luxury villa. The craftsmanship is impeccable, and we've noticed a significant improvement in indoor comfort.",
+    "testimonial3Name": "Mohammed Al Kaabi",
+    "testimonial3Position": "Property Owner, Al Ain",
+    "testimonial4Text": "Hydro Seal delivered professional HVAC insulation services for our commercial complex. Their technical expertise and attention to safety standards impressed us. Highly recommend their services.",
+    "testimonial4Name": "Fatima Al Suwaidi",
+    "testimonial4Position": "Project Manager, Real Estate Development"
   }
 }
 
