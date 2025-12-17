@@ -1,6 +1,6 @@
 import Social from "@/components/data/social";
 import Link from "next/link";
-import logo from "../../../public/assets/img/skywareLogo.png";
+import logo from "../../../public/assets/img/realLogo.png";
 import ctaBg from "../../../public/assets/img/subscribe/subscribe-two-shape-2.png";
 import footerBg from "../../../public/assets/img/shape/footer-bg.png";
 import servicesData from "@/components/data/services-data";
@@ -24,7 +24,7 @@ const FooterTwo = () => {
                                     </div>
                                     <div className="call-box-item-info">
                                         <span>Make a call</span>
-                                        <Link href="tel:(307)555-0133">+923307693693</Link>
+                                        <Link href="tel:+971528595217">052 859 5217</Link>
                                     </div>
                                 </div>
                             </div>
@@ -75,7 +75,7 @@ const FooterTwo = () => {
                                     </div>
                                     <div className="footer__one-widget-location-item-info email">
                                         <span>Email</span>
-                                        <Link href="mailto:helpinfo@gmail.com">info@skywareit.com</Link>
+                                        <Link href="mailto:hydroseal.insulation@gmail.com">hydroseal.insulation@gmail.com</Link>
                                     </div>
                                 </div>
                                 <div className="footer__one-widget-location-item">
@@ -84,7 +84,7 @@ const FooterTwo = () => {
                                     </div>
                                     <div className="footer__one-widget-location-item-info">
                                         <span>Address</span>
-                                        <Link href="https://google.com/maps">Peshawar, Pakistan</Link>
+                                        <Link href="https://google.com/maps">Al Ain, Abu Dhabi, UAE</Link>
                                     </div>
                                 </div>
                             </div>
@@ -109,7 +109,7 @@ const FooterTwo = () => {
                     <div className="row justify-content-between copyright__one-container-area">
                         <div className="col-xl-5 col-lg-6"> 
                             <div className="copyright__one-left">
-                                <p>© Skyware 2025 | All Rights Reserved</p>
+                                <p>© Hydro Seal Insulation Works 2025 | All Rights Reserved</p>
                             </div>
                         </div>
                         <div className="col-xl-5 col-lg-6">

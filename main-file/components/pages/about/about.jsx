@@ -23,7 +23,7 @@ const AboutMain = () => {
                                 <i className="flaticon-consultant"></i>
                                 <div className="experience-bar-right">
                                     <div className="experience-bar-counter">
-                                        <h4 className="counter"><Count number={12}/></h4>
+                                        <h4 className="counter"><Count number={15}/></h4>
                                         <span>+</span>
                                     </div>
                                     <span>Years Experience</span>
@@ -38,27 +38,27 @@ const AboutMain = () => {
                     <div className="col-xl-6 col-lg-7 col-md-9">
                         <div className="about__one-content">
                             <span className="subtitle-one">About us</span>
-                            <h2>Empowering Organizations Through Innovation.</h2>
-                            <p>Skyware is a forward-thinking IT solutions provider dedicated to delivering reliable, innovative, and scalable technology services. We empower organizations by transforming complex challenges into seamless digital solutions that drive efficiency, growth, and long-term success. With a commitment to excellence, we partner with clients to design and implement IT strategies that align with their unique business objectives.</p>
+                            <h2>Protecting Buildings Through Expert Insulation Solutions</h2>
+                            <p>Hydro Seal Insulation Works is a leading provider of comprehensive insulation and waterproofing solutions in the UAE. Based in Al Ain, Abu Dhabi, we specialize in delivering high-quality thermal insulation, waterproofing, and protective coating services for residential, commercial, and industrial projects. With years of experience and a commitment to excellence, we help our clients achieve energy efficiency, structural protection, and long-term cost savings.</p>
                             <div className="about__one-content-service">
                                 <div className="service">
                                     <i className="far fa-check-circle"></i>
-                                    <span>Software Development</span>
+                                    <span>Thermal Insulation</span>
                                 </div>
                                 <div className="service">
                                     <i className="far fa-check-circle"></i>
-                                    <span>Hospitalitiy Digitalization</span>
+                                    <span>Waterproofing Solutions</span>
                                 </div>
                                 <div className="service">
                                     <i className="far fa-check-circle"></i>
-                                    <span>NextGen IoT Systems</span>
+                                    <span>HVAC Insulation</span>
                                 </div>
                                 <div className="service">
                                     <i className="far fa-check-circle"></i>
-                                    <span>Networking Sevices</span>
+                                    <span>Specialized Coatings</span>
                                 </div>
                             </div>
-                            <Link href="/about" className="btn-one">Discover More<i className="fas fa-arrow-right"></i></Link>
+                            <Link href="/contact" className="btn-one">Get In Touch<i className="fas fa-arrow-right"></i></Link>
                         </div>
                     </div>
                 </div>

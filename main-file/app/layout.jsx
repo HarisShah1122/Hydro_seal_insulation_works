@@ -3,8 +3,8 @@ import BootstrapProvider from "../components/BootstrapProvider";
 import Script from 'next/script';
 
 export const metadata = {
-    title: 'Skyware IT Solutions',
-    description: 'Professional IT Solutions for Your Business',
+    title: 'Hydro Seal Insulation Works',
+    description: 'Professional Insulation & Waterproofing Solutions in Al Ain, Abu Dhabi',
     icons: {
         icon: [
             { url: '/favicon.jpg', sizes: '16x16', type: 'image/jpg' },

@@ -1,6 +1,6 @@
-# Skyware IT Solutions - Official Website
+# Hydro Seal Insulation Works - Official Website
 
-A modern, responsive website built with Next.js for Skyware IT Solutions, showcasing our technology services and digital solutions.
+A modern, responsive website built with Next.js for Hydro Seal Insulation Works, showcasing our comprehensive insulation and waterproofing services in the UAE.
 
 ## 🚀 Features
 
@@ -14,15 +14,17 @@ A modern, responsive website built with Next.js for Skyware IT Solutions, showca
 ## 📋 Pages Included
 
 - **Home**: Landing page with hero section and key services
-- **About**: Company information and team details
-- **Services**: Detailed service offerings and solutions
-- **Portfolio**: Showcase of completed projects
-- **Blog**: Latest news and insights
+- **About**: Company information and experience
+- **Services**: Detailed insulation and waterproofing service offerings
+- **Portfolio**: Showcase of completed projects with images
+- **Clients**: Our prestigious client portfolio
+- **Facilities**: State-of-the-art equipment and infrastructure
+- **Quality & HSE**: Our commitment to safety and quality standards
 - **Contact**: Contact form and company information
 - **FAQ**: Frequently asked questions
 - **Team**: Meet our team members
 - **Testimonials**: Client feedback and reviews
-- **Request Quote**: Quote request form
+- **Request Quote**: Professional quote request form
 
 ## 🛠️ Technologies Used
 
@@ -37,8 +39,8 @@ A modern, responsive website built with Next.js for Skyware IT Solutions, showca
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/skyware-website.git
-   cd skyware-website
+   git clone https://github.com/yourusername/hydroseal-website.git
+   cd hydroseal-website/main-file
    ```
 
 2. **Install dependencies**
@@ -84,7 +86,10 @@ main-file/
 │   ├── about/             # About page
 │   ├── services/          # Services pages
 │   ├── portfolio/         # Portfolio pages
-│   ├── blog/              # Blog pages
+│   ├── clients/           # Clients page
+│   ├── facilities/        # Facilities page
+│   ├── quality-hse/       # Quality & HSE page
+│   ├── contact/           # Contact page
 │   └── ...                # Other pages
 ├── components/            # Reusable components
 │   ├── data/              # Data files
@@ -92,6 +97,8 @@ main-file/
 │   └── pages/             # Page-specific components
 ├── public/                # Static assets
 │   └── assets/            # Images, CSS, fonts
+│       └── img/           
+│           └── hydro seal projects/  # Project images
 ├── package.json           # Dependencies and scripts
 └── next.config.mjs        # Next.js configuration
 ```
@@ -110,9 +117,18 @@ main-file/
 - Component styles: Individual component files
 
 ### Images
-- Replace images in `public/assets/img/`
-- Update image paths in data files
+- Project images: `public/assets/img/hydro seal projects/`
+- Company logos: `public/assets/img/` (realLogo.png, justlogo.jpeg)
 - Optimize images for web performance
+
+## 🏗️ Our Services
+
+1. **Thermal Insulation** - Energy-efficient temperature control solutions
+2. **Waterproofing Solutions** - Complete water damage protection
+3. **HVAC Insulation** - Optimize climate control systems
+4. **Acoustic Insulation** - Professional soundproofing services
+5. **Fire Protection Insulation** - Advanced fire-resistant materials
+6. **Specialized Coatings** - Protective coatings for durability
 
 ## 📱 Responsive Design
 
@@ -128,28 +144,34 @@ The website is fully responsive and optimized for:
 - `npm run start` - Start production server
 - `npm run lint` - Run ESLint
 
-## 📞 Support
+## 📞 Contact Information
 
-For support and questions:
-- **Email**: info@skyware.com
-- **Website**: [www.skyware.com](https://www.skyware.com)
-- **Phone**: +1 (555) 123-4567
+- **Email**: hydroseal.insulation@gmail.com
+- **Phone**: 052 859 5217 / 052 757 1874 / 052 757 1873
+- **Location**: Al Ain, Abu Dhabi, UAE
+- **Working Hours**: Sat - Thu: 8:00 AM - 6:00 PM
 
 ## 📄 License
 
-This project is proprietary to Skyware IT Solutions. All rights reserved.
-
-## 🤝 Contributing
-
-This is a private project for Skyware IT Solutions. For internal contributions, please follow the company's development guidelines.
+This project is proprietary to Hydro Seal Insulation Works. All rights reserved.
 
 ## 🔄 Version History
 
-- **v1.0.0** - Initial release with core functionality
-- **v1.1.0** - Added blog and portfolio sections
-- **v1.2.0** - Enhanced mobile responsiveness
-- **v1.3.0** - Added testimonial and FAQ sections
+- **v2.0.0** - Complete rebrand from Skyware to Hydro Seal Insulation Works
+  - New insulation and waterproofing services
+  - Added Clients, Facilities, and Quality & HSE pages
+  - Updated portfolio with completed projects
+  - Redesigned quote request form
+- **v1.0.0** - Initial release
+
+## 🏆 Company Highlights
+
+- **15+ Years** of experience in the insulation industry
+- **ISO 9001:2015** Quality Management certified
+- **Zero Lost Time Injuries** in 2024
+- Serving **Healthcare, Education, Commercial, and Residential** sectors
+- Trusted by **government institutions** and **private enterprises**
 
 ---
 
-**Skyware IT Solutions** - Transforming businesses through innovative technology solutions.
+**Hydro Seal Insulation Works** - Excellence in Insulation & Waterproofing Solutions

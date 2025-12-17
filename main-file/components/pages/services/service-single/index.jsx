@@ -9,7 +9,7 @@ import ScrollToTop from "../../common/scroll/scroll-to-top";
 const ServicesSingle = ({serviceDetails}) => {
     return (
         <>
-            <SEO pageTitle={`${serviceDetails?.title} - Skyware IT Solutions`} />            
+            <SEO pageTitle={`${serviceDetails?.title} - Hydro Seal Insulation Works`} />            
             <HeaderOne />
             <BreadCrumb title={serviceDetails?.title} innerTitle={serviceDetails?.subtitle} />
             <ServicesSingleMain serviceDetails={serviceDetails}/>

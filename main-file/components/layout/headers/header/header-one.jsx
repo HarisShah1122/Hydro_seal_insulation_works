@@ -3,8 +3,8 @@ import MainMenu from '../header-menu';
 import Search from '../search';
 import { useEffect, useState } from 'react';
 import SideBar from '../offcanvas';
-import logo1 from "../../../../public/assets/img/finalSkyware.jpeg";
-import logo2 from "../../../../public/assets/img/logo-2.png";
+import logo1 from "../../../../public/assets/img/realLogo.png";
+import logo2 from "../../../../public/assets/img/realLogo.png";
 import MobileMenuPopup from '../mobile-menu/menu-area';
 import Link from 'next/link';
 
@@ -35,13 +35,13 @@ const HeaderOne = ({variant}) => {
                 <div className="row">
                     <div className="col-xl-7 col-md-7">
                         <div className="top__bar-left">
-                            <Link href="tel:+923307693693"><i className="fas fa-phone-alt"></i>+923307693693</Link>
-                            <Link href="mailto:info@skywareit.com"><i className="fas fa-envelope"></i>info@skywareit.com</Link>
+                            <Link href="tel:+971528595217"><i className="fas fa-phone-alt"></i>052 859 5217</Link>
+                            <Link href="mailto:hydroseal.insulation@gmail.com"><i className="fas fa-envelope"></i>hydroseal.insulation@gmail.com</Link>
                         </div>
                     </div>
                     <div className="col-xl-5 col-md-5">
                         <div className="top__bar-right">
-                            <Link href="https://www.google.com/maps"><i className="fas fa-map-marker-alt"></i>peshawar, Pakistan</Link>
+                            <Link href="https://www.google.com/maps"><i className="fas fa-map-marker-alt"></i>Al Ain, Abu Dhabi</Link>
                         </div>
                     </div>
                 </div>

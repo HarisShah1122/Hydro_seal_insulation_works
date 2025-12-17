@@ -4,7 +4,7 @@ import { useEffect } from "react";
 const SEO = ({ pageTitle }) => {
   useEffect(() => {
     if (typeof document !== 'undefined') {
-      document.title = pageTitle + " - Skyware IT Solutions";
+      document.title = pageTitle + " - Hydro Seal Insulation Works";
     }
   }, [pageTitle]);
 };

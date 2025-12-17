@@ -69,20 +69,20 @@ const AboutFive = () => {
                     <div className="col-xl-6 col-lg-7 col-md-9">
                         <div className="about__five-content">
                             <span className="subtitle-one">About us</span>
-                            <h2>Innovating Solutions for Your Business</h2>
+                            <h2>Your Trusted Partner in Insulation Solutions</h2>
                             <div className="about__five-content-service">
                                 <div className="single-service">
                                     <i className="fas fa-check-circle"></i>
                                     <div className="single-service-content">
                                         <h4>Vision</h4>
-                                        <p>To be a trusted leader in IT solutions, empowering businesses worldwide through innovation, reliability, and excellence in technology.</p>
+                                        <p>To be the leading insulation and waterproofing contractor in the UAE, recognized for excellence in quality, safety, and customer satisfaction.</p>
                                     </div>
                                 </div>
                                 <div className="single-service">
                                     <i className="fas fa-check-circle"></i>
                                     <div className="single-service-content">
                                         <h4>Mission</h4>
-                                        <p>Providing tailored IT solutions for organizations to adapt and excel in the digital landscape. Building lasting partnerships through quality, integrity, and customer-centric service.</p>
+                                        <p>Delivering superior insulation and waterproofing solutions that protect properties, enhance energy efficiency, and exceed client expectations through skilled craftsmanship and commitment to safety.</p>
                                     </div>
                                 </div>
                             </div>

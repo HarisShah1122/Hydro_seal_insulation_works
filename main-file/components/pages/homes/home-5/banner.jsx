@@ -20,9 +20,9 @@ const BannerFive = () => {
                     <div className="row align-items-center gy-4 justify-content-center">
                         <div className="col-xl-7 col-lg-6">
                             <div className="banner__five-content">
-                                <span className="subtitle-one">Skyware</span>
-                                <h2 > Building trust through technology</h2>
-                                <p>We are committed to delivering innovative and reliable IT solutions that empower businesses to thrive in a fast-evolving digital world</p>
+                                <span className="subtitle-one">Hydro Seal Insulation Works</span>
+                                <h2>Excellence in Insulation & Waterproofing Solutions</h2>
+                                <p>Leading provider of comprehensive insulation and waterproofing services in Al Ain and Abu Dhabi. We deliver quality, safety, and energy-efficient solutions for residential, commercial, and industrial projects.</p>
                                 <div className="banner__five-content-bottom">
                                     <Link href="/contact" className="btn-two">Contact Us<i className="fa fa-arrow-right"></i></Link>
                                    

@@ -16,42 +16,42 @@ const Choose = () => {
                     <div className="col-xl-5 col-lg-7 col-md-9">
                         <div className="why-choose-us__four-left">
                             <div className="why-choose-us__four-title">
-                                <span className="subtitle-one">Why Chose Us</span>
-                                <h2>Skyware Your Trusted IT Partner</h2>
+                                <span className="subtitle-one">Why Choose Us</span>
+                                <h2>Hydro Seal - Your Trusted Insulation Partner</h2>
                                 <div className="why-choose-us__four-content-service">
                                     <div className="single-service">
                                         <i className="fas fa-check-circle"></i>
                                         <div className="single-service-content">
-                                            <h4>Proven Expertise</h4>
-                                            <p>Proven expertise in delivering end-to-end IT solutions</p>
+                                            <h4>15+ Years Experience</h4>
+                                            <p>Proven expertise in insulation and waterproofing solutions</p>
                                         </div>
                                     </div>
                                     <div className="single-service">
                                         <i className="fas fa-check-circle"></i>
                                         <div className="single-service-content">
-                                            <h4>Client-Focused</h4>
-                                            <p>Client-focused approach with measurable results</p>
+                                            <h4>Quality Materials</h4>
+                                            <p>Premium materials from trusted international suppliers</p>
                                         </div>
                                     </div>
                                     <div className="single-service">
                                         <i className="fas fa-check-circle"></i>
                                         <div className="single-service-content">
-                                            <h4>Innovation</h4>
-                                            <p>Commitment to innovation and continuous improvement</p>
+                                            <h4>Safety First</h4>
+                                            <p>ISO certified with impeccable safety record</p>
                                         </div>
                                     </div>
                                     <div className="single-service">
                                         <i className="fas fa-check-circle"></i>
                                         <div className="single-service-content">
-                                            <h4>Professional Team</h4>
-                                            <p>Dedicated team of professionals with industry knowledge</p>
+                                            <h4>Skilled Workforce</h4>
+                                            <p>Trained and certified technicians and engineers</p>
                                         </div>
                                     </div>
                                     <div className="single-service">
                                         <i className="fas fa-check-circle"></i>
                                         <div className="single-service-content">
-                                            <h4>Trust & Reliability</h4>
-                                            <p>Long-term partnerships built on trust and reliability</p>
+                                            <h4>Guaranteed Results</h4>
+                                            <p>Warranty-backed work with customer satisfaction guarantee</p>
                                         </div>
                                     </div>
                                 </div>

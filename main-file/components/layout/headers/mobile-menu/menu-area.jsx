@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import ResponsiveMenu from "./responsive-menu";
-import logo2 from "../../../../public/assets/img/finalSkyware.jpeg";
+import logo2 from "../../../../public/assets/img/realLogo.png";
 
 const MobileMenuPopup = ({ isOpen, setIsOpen }) => {
     return (

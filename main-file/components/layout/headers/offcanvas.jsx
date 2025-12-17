@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import logo2 from "../../../public/assets/img/skywareLogo.png";
+import logo2 from "../../../public/assets/img/realLogo.png";
 import Social from '@/components/data/social';
 
 const SideBar = ({ isOpen, setIsOpen }) => {
@@ -12,7 +12,7 @@ const SideBar = ({ isOpen, setIsOpen }) => {
 					<img className='logo_one' src={logo2.src} style={{borderRadius: '10px'}} alt="logo" />
 				</Link>
 				</div>
-				<p>The insurance company assumes the financial risk of covering these events in exchange for the premiums paid by the policyholder. There are many different types of insurance,</p>
+				<p>Hydro Seal Insulation Works is your trusted partner for comprehensive insulation and waterproofing solutions in the UAE. We deliver quality, safety, and energy-efficient services for all types of buildings.</p>
 				<div className="header__area-menubar-right-sidebar-popup-contact">
 					<h4 className="mb-30">Get In Touch</h4>
 					<div className="header__area-menubar-right-sidebar-popup-contact-item">
@@ -21,7 +21,7 @@ const SideBar = ({ isOpen, setIsOpen }) => {
 						</div>
 						<div className="header__area-menubar-right-sidebar-popup-contact-item-content">
 							<span>Call Now</span>
-							<h6><Link href="tel:+125(895)658568">+923307693693</Link></h6>
+							<h6><Link href="tel:+971528595217">052 859 5217</Link></h6>
 						</div>
 					</div>
 					<div className="header__area-menubar-right-sidebar-popup-contact-item">
@@ -30,7 +30,7 @@ const SideBar = ({ isOpen, setIsOpen }) => {
 						</div>
 						<div className="header__area-menubar-right-sidebar-popup-contact-item-content">
 							<span>Quick Email</span>
-							<h6><Link href="mailto:info.help@gmail.com">info.skywareit.com</Link></h6>
+							<h6><Link href="mailto:hydroseal.insulation@gmail.com">hydroseal.insulation@gmail.com</Link></h6>
 						</div>
 					</div>
 					<div className="header__area-menubar-right-sidebar-popup-contact-item">
@@ -39,7 +39,7 @@ const SideBar = ({ isOpen, setIsOpen }) => {
 						</div>
 						<div className="header__area-menubar-right-sidebar-popup-contact-item-content">
 							<span>Office Address</span>
-							<h6><Link href="https://google.com/maps" target="_blank">Peshawar, Pakistan</Link></h6>
+							<h6><Link href="https://google.com/maps" target="_blank">Al Ain, Abu Dhabi, UAE</Link></h6>
 						</div>
 					</div>
 				</div>

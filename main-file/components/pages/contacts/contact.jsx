@@ -19,8 +19,8 @@ const ContactUs = () => {
                             <div className="contact__two-content">
                                 <div className="contact__two-title">
                                     <span className="subtitle-one">Contact us</span>
-                                    <h2>Do you have any question? </h2>
-                                   
+                                    <h2>Need Insulation or Waterproofing Services?</h2>
+                                    <p>Get in touch with our experts for a free consultation and quote.</p>
                                 </div>
                                 <div className="contact__two-form">
                                     <FormArea />
@@ -35,7 +35,7 @@ const ContactUs = () => {
                                     </div>
                                     <div className="contact__two-single-info-content">
                                         <h4>Email</h4>
-                                        <span>info@skywareit.com</span>
+                                        <span>hydroseal.insulation@gmail.com</span>
                                     </div>
                                 </div>
                                 <div className="contact__two-single-info">
@@ -44,7 +44,9 @@ const ContactUs = () => {
                                     </div>
                                     <div className="contact__two-single-info-content">
                                         <h4>Contacts</h4>
-                                        <span>+923307693693
+                                        <span>052 859 5217<br/>
+                                        052 757 1874<br/>
+                                        052 757 1873
                                         </span>
                                     </div>
                                 </div>
@@ -54,7 +56,7 @@ const ContactUs = () => {
                                     </div>
                                     <div className="contact__two-single-info-content">
                                         <h4>Timing</h4>
-                                        <span>Mon - Sat : 9:00 AM - 5:00 PM</span>
+                                        <span>Sat - Thu : 8:00 AM - 6:00 PM</span>
                                     </div>
                                 </div>
                                 <div className="contact__two-single-info">
@@ -63,7 +65,7 @@ const ContactUs = () => {
                                     </div>
                                     <div className="contact__two-single-info-content">
                                         <h4>Location</h4>
-                                        <span>peshawar, Pakistan</span>
+                                        <span>Al Ain, Abu Dhabi, UAE</span>
                                     </div>    
                                 </div>
                             </div>
