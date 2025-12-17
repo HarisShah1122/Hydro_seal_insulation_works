@@ -74,8 +74,13 @@
   "about": {
     "title": "About us",
     "subtitle": "Your Trusted Partner in Insulation Solutions",
-    "description": "Hydro Seal Insulation Works is a leading provider of comprehensive insulation and waterproofing solutions in the UAE",
-    "yearsExperience": "Years of Experience",
+    "description": "Hydro Seal Insulation Works is a leading provider of comprehensive insulation and waterproofing solutions in the UAE"
+  },
+  "aboutPage": {
+    "title": "About us",
+    "subtitle": "Protecting Buildings Through Expert Insulation Solutions",
+    "description": "Hydro Seal Insulation Works is a leading provider of comprehensive insulation and waterproofing solutions in the UAE. Based in Al Ain, Abu Dhabi, we specialize in delivering high-quality thermal insulation, waterproofing, and protective coating services for residential, commercial, and industrial projects. With years of experience and a commitment to excellence, we help our clients achieve energy efficiency, structural protection, and long-term cost savings.",
+    "yearsExperience": "Years Experience",
     "projectsCompleted": "Projects Completed",
     "happyClients": "Happy Clients",
     "certifiedExperts": "Certified Experts",
@@ -122,6 +127,23 @@
     "callUs": "Call Us",
     "emailUs": "Email Us",
     "office": "Office Address"
+  },
+  "contactPage": {
+    "title": "Contact us",
+    "subtitle": "Need Insulation or Waterproofing Services?",
+    "description": "Get in touch with our experts for a free consultation and quote.",
+    "email": "Email",
+    "contacts": "Contacts",
+    "timing": "Timing",
+    "workingHours": "Sat - Thu : 8:00 AM - 6:00 PM",
+    "location": "Location"
+  },
+  "contactForm": {
+    "fullName": "Full Name",
+    "emailAddress": "Email Address",
+    "subject": "Subject",
+    "message": "Message",
+    "submit": "Submit Now"
   },
   "footer": {
     "followUs": "Follow us",

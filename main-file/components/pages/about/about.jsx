@@ -1,3 +1,5 @@
+"use client";
+import { useTranslations } from 'next-intl';
 import brand1 from "../../../public/assets/img/brand/brand-1.png";
 import brand2 from "../../../public/assets/img/brand/brand-2.png";
 import brand3 from "../../../public/assets/img/brand/brand-3.png";
@@ -12,6 +14,8 @@ import Testimonial from "../homes/home-5/testimonial";
 
 
 const AboutMain = () => {
+    const t = useTranslations('aboutPage');
+    const tNav = useTranslations('nav');
     return (
         <>
         <div className="about__one section-padding">
@@ -26,7 +30,7 @@ const AboutMain = () => {
                                         <h4 className="counter"><Count number={15}/></h4>
                                         <span>+</span>
                                     </div>
-                                    <span>Years Experience</span>
+                                    <span>{t('yearsExperience')}</span>
                                 </div>
                             </div>
                             <div className="about__one-image-wrapper">
@@ -37,25 +41,25 @@ const AboutMain = () => {
                     </div>
                     <div className="col-xl-6 col-lg-7 col-md-9">
                         <div className="about__one-content">
-                            <span className="subtitle-one">About us</span>
-                            <h2>Protecting Buildings Through Expert Insulation Solutions</h2>
-                            <p>Hydro Seal Insulation Works is a leading provider of comprehensive insulation and waterproofing solutions in the UAE. Based in Al Ain, Abu Dhabi, we specialize in delivering high-quality thermal insulation, waterproofing, and protective coating services for residential, commercial, and industrial projects. With years of experience and a commitment to excellence, we help our clients achieve energy efficiency, structural protection, and long-term cost savings.</p>
+                            <span className="subtitle-one">{t('title')}</span>
+                            <h2>{t('subtitle')}</h2>
+                            <p>{t('description')}</p>
                             <div className="about__one-content-service">
                                 <div className="service">
                                     <i className="far fa-check-circle"></i>
-                                    <span>Thermal Insulation</span>
+                                    <span>{tNav('thermalInsulation')}</span>
                                 </div>
                                 <div className="service">
                                     <i className="far fa-check-circle"></i>
-                                    <span>Waterproofing Solutions</span>
+                                    <span>{tNav('waterproofing')}</span>
                                 </div>
                                 <div className="service">
                                     <i className="far fa-check-circle"></i>
-                                    <span>HVAC Insulation</span>
+                                    <span>{tNav('hvacInsulation')}</span>
                                 </div>
                                 <div className="service">
                                     <i className="far fa-check-circle"></i>
-                                    <span>Specialized Coatings</span>
+                                    <span>{tNav('specializedCoatings')}</span>
                                 </div>
                             </div>
                             <Link href="/contact" className="btn-one">Get In Touch<i className="fas fa-arrow-right"></i></Link>

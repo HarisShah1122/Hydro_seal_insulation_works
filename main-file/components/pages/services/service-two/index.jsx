@@ -11,7 +11,7 @@ const ServicePageTwo = () => {
         <>
             <SEO pageTitle="Services Two" />
             <HeaderOne />
-            <BreadCrumb title="Services" />
+            <BreadCrumb title="services" />
             <ServicesMain />
             <FooterTwo />
             <ScrollToTop />
