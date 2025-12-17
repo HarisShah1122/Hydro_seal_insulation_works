@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import logo2 from "../../../public/assets/img/realLogo.png";
+import logo2 from "../../../public/assets/img/logo/hydroseal logo.jpg";
 import Social from '@/components/data/social';
 
 const SideBar = ({ isOpen, setIsOpen }) => {
@@ -9,7 +9,7 @@ const SideBar = ({ isOpen, setIsOpen }) => {
                 <div className="sidebar-close-btn" onClick={() => setIsOpen(false)}><i className="fal fa-times"></i></div>
 				<div className="header__area-menubar-right-sidebar-popup-logo">
 				<Link href='/'>
-					<img className='logo_one' src={logo2.src} style={{borderRadius: '10px'}} alt="logo" />
+					<img className='logo_one' src={logo2.src} style={{borderRadius: '10px', maxHeight: '80px', width: 'auto'}} alt="logo" />
 				</Link>
 				</div>
 				<p>Hydro Seal Insulation Works is your trusted partner for comprehensive insulation and waterproofing solutions in the UAE. We deliver quality, safety, and energy-efficient services for all types of buildings.</p>

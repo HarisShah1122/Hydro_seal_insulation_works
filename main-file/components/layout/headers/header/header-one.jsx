@@ -3,8 +3,8 @@ import MainMenu from '../header-menu';
 import Search from '../search';
 import { useEffect, useState } from 'react';
 import SideBar from '../offcanvas';
-import logo1 from "../../../../public/assets/img/realLogo.png";
-import logo2 from "../../../../public/assets/img/realLogo.png";
+import logo1 from "../../../../public/assets/img/logo/hydroseal logo.jpg";
+import logo2 from "../../../../public/assets/img/logo/hydroseal logo.jpg";
 import MobileMenuPopup from '../mobile-menu/menu-area';
 import Link from 'next/link';
 
@@ -52,7 +52,7 @@ const HeaderOne = ({variant}) => {
                 <div className="header__area-menubar">
                     <div className="header__area-menubar-left">
                         <div className="header__area-menubar-left-logo">
-                            <Link href="/"><img src={logo1.src} alt="logo" /></Link>
+                            <Link href="/"><img src={logo1.src} alt="logo" style={{maxHeight: '60px', width: 'auto'}} /></Link>
                         </div>
                     </div>
                     <div className="header__area-menubar-center">

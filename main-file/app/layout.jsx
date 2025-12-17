@@ -7,11 +7,11 @@ export const metadata = {
     description: 'Professional Insulation & Waterproofing Solutions in Al Ain, Abu Dhabi',
     icons: {
         icon: [
-            { url: '/favicon.jpg', sizes: '16x16', type: 'image/jpg' },
-            { url: '/favicon.jpg', sizes: '32x32', type: 'image/jpg' }
+            { url: '/assets/img/logo/hydroseal logo.jpg', sizes: '16x16', type: 'image/jpg' },
+            { url: '/assets/img/logo/hydroseal logo.jpg', sizes: '32x32', type: 'image/jpg' }
         ],
-        shortcut: '/favicon.jpg',
-        apple: '/favicon.jpg'
+        shortcut: '/assets/img/logo/hydroseal logo.jpg',
+        apple: '/assets/img/logo/hydroseal logo.jpg'
     }
 };
 

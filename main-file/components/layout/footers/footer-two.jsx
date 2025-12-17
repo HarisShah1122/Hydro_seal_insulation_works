@@ -1,6 +1,6 @@
 import Social from "@/components/data/social";
 import Link from "next/link";
-import logo from "../../../public/assets/img/realLogo.png";
+import logo from "../../../public/assets/img/logo/hydroseal logo.jpg";
 import ctaBg from "../../../public/assets/img/subscribe/subscribe-two-shape-2.png";
 import footerBg from "../../../public/assets/img/shape/footer-bg.png";
 import servicesData from "@/components/data/services-data";
@@ -40,7 +40,7 @@ const FooterTwo = () => {
                     <div className="col-xl-3 col-md-6 col-sm-7 xl-mb-30">
                         <div className="footer__one-widget">
                             <div className="footer__one-widget-about">
-                                <Link href="/"><img style={{borderRadius: '20px'}} src={logo.src} alt="Logo-image" /></Link>
+                                <Link href="/"><img style={{borderRadius: '20px', maxHeight: '80px', width: 'auto'}} src={logo.src} alt="Logo-image" /></Link>
                                 
                                 <div className="footer__one-widget-about-social">
                                     <h4>Follow us</h4>	

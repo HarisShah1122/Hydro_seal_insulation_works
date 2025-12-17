@@ -1,13 +1,13 @@
 import Link from 'next/link';
 import ResponsiveMenu from "./responsive-menu";
-import logo2 from "../../../../public/assets/img/realLogo.png";
+import logo2 from "../../../../public/assets/img/logo/hydroseal logo.jpg";
 
 const MobileMenuPopup = ({ isOpen, setIsOpen }) => {
     return (
         <div className={`menu__bar-popup ${isOpen ? "show" : ""}`}>
             <div className="menu__bar-popup-top">
                 <div className="logo">
-                    <Link href="/"><img src={logo2.src} alt='logo' /></Link>
+                    <Link href="/"><img src={logo2.src} alt='logo' style={{maxHeight: '60px', width: 'auto'}} /></Link>
                 </div>
                 <div className="close" onClick={() => setIsOpen(false)}>
                     <i className="fa fa-times"></i>
