@@ -31,9 +31,9 @@ export default async function RootLayout({ children }) {
             </head>
             <body>
                 <NextIntlClientProvider locale={locale} messages={messages}>
-                    <BootstrapProvider>
-                        {children}
-                    </BootstrapProvider>
+                <BootstrapProvider>
+                    {children}
+                </BootstrapProvider>
                 </NextIntlClientProvider>
             </body>
         </html>

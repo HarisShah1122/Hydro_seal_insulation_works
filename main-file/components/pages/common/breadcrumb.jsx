@@ -8,8 +8,30 @@ const BreadCrumb = ({title, innerTitle, customImage}) => {
     const t = useTranslations('nav');
     const bannerImage = customImage || defaultImage;
     
-    // Try to get translation, fallback to title if not found
-    const translatedTitle = t(title) !== title ? t(title) : title;
+    // Map service titles to translation keys
+    const titleMap = {
+        'Thermal Insulation': 'thermalInsulation',
+        'Waterproofing Solutions': 'waterproofing',
+        'HVAC Insulation': 'hvacInsulation',
+        'Acoustic Insulation': 'acousticInsulation',
+        'Fire Protection Insulation': 'fireProtection',
+        'Specialized Coatings': 'specializedCoatings'
+    };
+    
+    // Get translation key or use title as-is if it's already a key
+    const translationKey = titleMap[title] || title;
+    
+    // Try to get translation, fallback to original title if not found
+    let translatedTitle = title;
+    try {
+        const translated = t(translationKey);
+        if (translated && translated !== translationKey) {
+            translatedTitle = translated;
+        }
+    } catch (e) {
+        // If translation fails, keep original title
+        translatedTitle = title;
+    }
     
     return (
         <div className="page__banner">

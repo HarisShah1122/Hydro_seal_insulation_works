@@ -55,7 +55,7 @@ const ServicesSingleMain = ({serviceDetails}) => {
                                     </div>
                                 </div>
                                 <div className="col-md-6">
-                                    <div className="service__details-thumb">
+                        <div className="service__details-thumb">
                                         <img src={AcousticInsulation2.src} alt={serviceDetails.title + ' 2'} style={{width: '100%', maxHeight: '500px', objectFit: 'contain'}} />
                                     </div>
                                 </div>
@@ -63,7 +63,7 @@ const ServicesSingleMain = ({serviceDetails}) => {
                         ) : (
                             <div className="service__details-thumb">
                                 <img src={serviceImage.src} alt={serviceDetails.title} style={{width: '100%', maxHeight: '500px', objectFit: 'contain'}} />
-                            </div>
+                        </div>
                         )}
                         <div className="service__details-content">
                             <h2>{serviceDetails.title}: {serviceDetails.subtitle}</h2>
