@@ -104,9 +104,9 @@ const QualityHSEPage = () => {
                     <div className="row mb-60">
                         <div className="col-xl-12">
                             <div className="about__one-title text-center">
-                                <span className="subtitle-one">Quality, Health, Safety & Environment</span>
-                                <h2>Our Commitment to Excellence and Safety</h2>
-                                <p className="mt-20">At Hydro Seal Insulation Works, quality and safety are not just policies – they are core values that guide every aspect of our operations. We are committed to protecting our people, our clients, and the environment while delivering world-class insulation solutions.</p>
+                                <span className="subtitle-one">{t('subtitle')}</span>
+                                <h2>{t('title')}</h2>
+                                <p className="mt-20">{t('description')}</p>
                             </div>
                         </div>
                     </div>
@@ -115,7 +115,7 @@ const QualityHSEPage = () => {
                     <div className="row mb-60">
                         <div className="col-xl-12 mb-40">
                             <div className="about__one-title text-center">
-                                <h3>Quality Assurance</h3>
+                                <h3>{t('qualityAssurance')}</h3>
                             </div>
                         </div>
                         {qualityPolicies.map((policy, idx) => (
@@ -125,8 +125,8 @@ const QualityHSEPage = () => {
                                         <i className={policy.icon}></i>
                                     </div>
                                     <div className="services__one-single-service-content">
-                                        <h4>{policy.title}</h4>
-                                        <p>{policy.description}</p>
+                                        <h4>{t(`quality${idx + 1}Title`)}</h4>
+                                        <p>{t(`quality${idx + 1}Desc`)}</p>
                                     </div>
                                 </div>
                             </div>
@@ -137,7 +137,7 @@ const QualityHSEPage = () => {
                     <div className="row mb-60">
                         <div className="col-xl-12 mb-40">
                             <div className="about__one-title text-center">
-                                <h3>Health, Safety & Environmental Policies</h3>
+                                <h3>{t('hsePolicies')}</h3>
                             </div>
                         </div>
                         <div className="col-xl-12">
@@ -146,7 +146,7 @@ const QualityHSEPage = () => {
                                     <div key={idx} className="col-xl-6 col-lg-6">
                                         <div className="why-choose-us__one-single-feature">
                                             <i className="fas fa-check-double"></i>
-                                            <span>{policy}</span>
+                                            <span>{t(`hsePolicy${idx + 1}`)}</span>
                                         </div>
                                     </div>
                                 ))}
