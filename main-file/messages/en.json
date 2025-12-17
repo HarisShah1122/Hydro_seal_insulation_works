@@ -80,7 +80,11 @@
   "about": {
     "title": "About us",
     "subtitle": "Your Trusted Partner in Insulation Solutions",
-    "description": "Hydro Seal Insulation Works is a leading provider of comprehensive insulation and waterproofing solutions in the UAE"
+    "description": "Hydro Seal Insulation Works is a leading provider of comprehensive insulation and waterproofing solutions in the UAE. Based in Al Ain, Abu Dhabi, we specialize in delivering high-quality thermal insulation, waterproofing, and protective coating services.",
+    "visionTitle": "Vision",
+    "visionText": "To be the leading insulation and waterproofing contractor in the UAE, recognized for excellence in quality, safety, and customer satisfaction.",
+    "missionTitle": "Mission",
+    "missionText": "Delivering superior insulation and waterproofing solutions that protect properties, enhance energy efficiency, and exceed client expectations through skilled craftsmanship and commitment to safety."
   },
   "aboutPage": {
     "title": "About us",
@@ -93,20 +97,20 @@
     "ourMission": "Our Mission",
     "ourVision": "Our Vision",
     "ourValues": "Our Values",
-    "visionTitle": "Our Vision",
-    "visionText": "To be the leading insulation and waterproofing contractor in the UAE, recognized for excellence in quality, safety, and customer satisfaction. We strive to set industry standards through innovation, reliability, and sustainable practices.",
-    "missionTitle": "Our Mission",
-    "missionText": "Delivering superior insulation and waterproofing solutions that protect properties, enhance energy efficiency, and exceed client expectations. Through skilled craftsmanship, advanced techniques, and unwavering commitment to safety, we ensure every project meets the highest standards of quality and durability."
+    "visionTitle": "Vision",
+    "visionText": "To be the leading insulation and waterproofing contractor in the UAE, recognized for excellence in quality, safety, and customer satisfaction.",
+    "missionTitle": "Mission",
+    "missionText": "Delivering superior insulation and waterproofing solutions that protect properties, enhance energy efficiency, and exceed client expectations through skilled craftsmanship and commitment to safety."
   },
   "workProcess": {
     "title": "Work Process",
-    "subtitle": "Workflow Journey",
-    "step1Title": "Idea Generation",
-    "step1Desc": "Creativity at this initial stage, we focus on understanding your unique challenge",
-    "step2Title": "Solution Development",
-    "step2Desc": "Transitioning from ideas to actionable solutions, our experts employ cutting-edge technologies",
-    "step3Title": "Outcome Delivery",
-    "step3Desc": "The culmination of our process, outcome delivery, is where plans become reality."
+    "subtitle": "Professional Insulation Workflow",
+    "step1Title": "Site Assessment",
+    "step1Desc": "Comprehensive evaluation of your property to identify insulation and waterproofing requirements, ensuring the right solution for your needs",
+    "step2Title": "Solution Design",
+    "step2Desc": "Our experts design customized insulation systems using premium materials and proven techniques tailored to your specific project",
+    "step3Title": "Expert Installation",
+    "step3Desc": "Professional implementation by certified technicians, followed by rigorous quality testing to ensure long-lasting protection and performance"
   },
   "whyChoose": {
     "title": "Why Choose Us",
