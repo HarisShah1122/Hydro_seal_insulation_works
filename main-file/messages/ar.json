@@ -1,0 +1,132 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "about": "عن الشركة",
+    "services": "الخدمات",
+    "projects": "المشاريع",
+    "facilities": "المرافق",
+    "qualityHSE": "الجودة والسلامة",
+    "clients": "العملاء",
+    "blog": "المدونة",
+    "contact": "اتصل بنا",
+    "getQuote": "احصل على عرض سعر",
+    "requestQuote": "طلب عرض سعر"
+  },
+  "header": {
+    "phone": "٠٥٢ ٨٥٩ ٥٢١٧",
+    "email": "hydroseal.insulation@gmail.com",
+    "location": "العين، أبوظبي"
+  },
+  "home": {
+    "welcome": "مرحباً بكم في هايدرو سيل",
+    "title": "حلول احترافية للعزل والعزل المائي",
+    "subtitle": "شريكك الموثوق في الإمارات",
+    "description": "المزود الرائد لخدمات العزل الحراري والعزل المائي والطلاءات المتخصصة في جميع أنحاء الإمارات",
+    "learnMore": "اعرف المزيد",
+    "ourServices": "خدماتنا",
+    "whyChooseUs": "لماذا تختارنا",
+    "recentProjects": "المشاريع الأخيرة"
+  },
+  "services": {
+    "title": "خدماتنا",
+    "subtitle": "حلول عزل شاملة",
+    "thermalInsulation": "العزل الحراري",
+    "thermalDesc": "كفاءة الطاقة والتحكم في درجة الحرارة",
+    "waterproofing": "حلول العزل المائي",
+    "waterproofingDesc": "حماية كاملة ضد أضرار المياه",
+    "hvacInsulation": "عزل أنظمة التكييف",
+    "hvacDesc": "تحسين أنظمة التحكم في المناخ",
+    "acousticInsulation": "العزل الصوتي",
+    "acousticDesc": "تحكم صوتي فائق وتقليل الضوضاء",
+    "fireProtection": "عزل الحماية من الحرائق",
+    "fireProtectionDesc": "حلول الحماية السلبية من الحرائق",
+    "specializedCoatings": "الطلاءات المتخصصة",
+    "specializedCoatingsDesc": "أنظمة الطلاء الواقية المتقدمة",
+    "viewDetails": "عرض التفاصيل",
+    "readMore": "اقرأ المزيد"
+  },
+  "about": {
+    "title": "عن الشركة",
+    "subtitle": "شريك العزل الموثوق",
+    "description": "هايدرو سيل لأعمال العزل هي المزود الرائد لحلول العزل والعزل المائي الشاملة في الإمارات",
+    "yearsExperience": "سنوات من الخبرة",
+    "projectsCompleted": "مشروع منجز",
+    "happyClients": "عميل راضٍ",
+    "certifiedExperts": "خبير معتمد",
+    "ourMission": "مهمتنا",
+    "ourVision": "رؤيتنا",
+    "ourValues": "قيمنا"
+  },
+  "contact": {
+    "title": "اتصل بنا",
+    "subtitle": "تواصل معنا",
+    "name": "اسمك",
+    "email": "بريدك الإلكتروني",
+    "phone": "رقم الهاتف",
+    "subject": "الموضوع",
+    "message": "الرسالة",
+    "send": "إرسال الرسالة",
+    "address": "العنوان",
+    "callUs": "اتصل بنا",
+    "emailUs": "راسلنا",
+    "office": "عنوان المكتب"
+  },
+  "footer": {
+    "followUs": "تابعنا",
+    "service": "الخدمات",
+    "contact": "اتصل بنا",
+    "newsletter": "النشرة الإخبارية",
+    "emailPlaceholder": "بريدك الإلكتروني",
+    "readyToStart": "هل أنت مستعد للبدء؟",
+    "requestQuote": "طلب عرض سعر",
+    "makeACall": "اتصل بنا",
+    "copyright": "هايدرو سيل لأعمال العزل ٢٠٢٥ | جميع الحقوق محفوظة",
+    "privacyPolicy": "سياسة الخصوصية",
+    "contactUs": "اتصل بنا"
+  },
+  "common": {
+    "viewAll": "عرض الكل",
+    "learnMore": "اعرف المزيد",
+    "readMore": "اقرأ المزيد",
+    "getStarted": "ابدأ الآن",
+    "contactUs": "اتصل بنا",
+    "callNow": "اتصل الآن",
+    "emailNow": "راسلنا الآن",
+    "getFreeQuote": "احصل على عرض مجاني",
+    "back": "رجوع",
+    "next": "التالي",
+    "previous": "السابق",
+    "loading": "جاري التحميل...",
+    "search": "بحث"
+  },
+  "projects": {
+    "title": "مشاريعنا",
+    "subtitle": "أعمال مميزة",
+    "description": "استكشف مجموعة أعمالنا الناجحة في العزل والعزل المائي",
+    "viewProject": "عرض المشروع"
+  },
+  "facilities": {
+    "title": "مرافقنا",
+    "subtitle": "بنية تحتية حديثة",
+    "description": "مرافق حديثة مجهزة بأحدث التقنيات لتقديم خدمة متميزة"
+  },
+  "qualityHSE": {
+    "title": "الجودة والسلامة",
+    "subtitle": "السلامة أولاً، الجودة دائماً",
+    "description": "ملتزمون بأعلى معايير الجودة والصحة والسلامة وحماية البيئة"
+  },
+  "clients": {
+    "title": "عملاؤنا",
+    "subtitle": "موثوق به من قبل كبرى المؤسسات",
+    "description": "نحن فخورون بخدمة مجموعة متنوعة من العملاء في جميع أنحاء الإمارات"
+  },
+  "blog": {
+    "title": "المدونة",
+    "subtitle": "آخر الأخبار والرؤى",
+    "readMore": "اقرأ المزيد",
+    "by": "بقلم",
+    "comments": "تعليقات",
+    "share": "شارك"
+  }
+}
+

@@ -7,6 +7,7 @@ import logo1 from "../../../../public/assets/img/logo/hydroseal logo.jpg";
 import logo2 from "../../../../public/assets/img/logo/hydroseal logo.jpg";
 import MobileMenuPopup from '../mobile-menu/menu-area';
 import Link from 'next/link';
+import LanguageSwitcher from '../../../LanguageSwitcher';
 
 const HeaderOne = ({variant}) => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -62,6 +63,9 @@ const HeaderOne = ({variant}) => {
                     </div>
                     <div className="header__area-menubar-right">
                         <div className="header__area-menubar-right-box">
+                            {/* Language Switcher */}
+                            <LanguageSwitcher />
+                            
                             {/* <div className="header__area-menubar-right-box-search">
                                 <div className="search">	
                                     <span className="header__area-menubar-right-box-search-icon open" onClick={() => setSearch(true)}>

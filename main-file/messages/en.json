@@ -1,0 +1,132 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "facilities": "Facilities",
+    "qualityHSE": "Quality & HSE",
+    "clients": "Clients",
+    "blog": "Blog",
+    "contact": "Contact",
+    "getQuote": "Get Quote",
+    "requestQuote": "Request Quote"
+  },
+  "header": {
+    "phone": "052 859 5217",
+    "email": "hydroseal.insulation@gmail.com",
+    "location": "Al Ain, Abu Dhabi"
+  },
+  "home": {
+    "welcome": "Welcome to Hydro Seal",
+    "title": "Professional Insulation & Waterproofing Solutions",
+    "subtitle": "Your Trusted Partner in the UAE",
+    "description": "Leading provider of thermal insulation, waterproofing, and specialized coating services across the UAE",
+    "learnMore": "Learn More",
+    "ourServices": "Our Services",
+    "whyChooseUs": "Why Choose Us",
+    "recentProjects": "Recent Projects"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive Insulation Solutions",
+    "thermalInsulation": "Thermal Insulation",
+    "thermalDesc": "Energy Efficiency & Temperature Control",
+    "waterproofing": "Waterproofing Solutions",
+    "waterproofingDesc": "Complete Protection Against Water Damage",
+    "hvacInsulation": "HVAC Insulation",
+    "hvacDesc": "Optimize Your Climate Control Systems",
+    "acousticInsulation": "Acoustic Insulation",
+    "acousticDesc": "Superior Sound Control & Noise Reduction",
+    "fireProtection": "Fire Protection Insulation",
+    "fireProtectionDesc": "Passive Fire Protection Solutions",
+    "specializedCoatings": "Specialized Coatings",
+    "specializedCoatingsDesc": "Advanced Protective Coating Systems",
+    "viewDetails": "View Details",
+    "readMore": "Read More"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Your Trusted Insulation Partner",
+    "description": "Hydro Seal Insulation Works is a leading provider of comprehensive insulation and waterproofing solutions in the UAE",
+    "yearsExperience": "Years of Experience",
+    "projectsCompleted": "Projects Completed",
+    "happyClients": "Happy Clients",
+    "certifiedExperts": "Certified Experts",
+    "ourMission": "Our Mission",
+    "ourVision": "Our Vision",
+    "ourValues": "Our Values"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get In Touch",
+    "name": "Your Name",
+    "email": "Your Email",
+    "phone": "Phone Number",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send Message",
+    "address": "Address",
+    "callUs": "Call Us",
+    "emailUs": "Email Us",
+    "office": "Office Address"
+  },
+  "footer": {
+    "followUs": "Follow us",
+    "service": "Service",
+    "contact": "Contact",
+    "newsletter": "Newsletter",
+    "emailPlaceholder": "Your e-mail",
+    "readyToStart": "Ready to get started?",
+    "requestQuote": "request quote",
+    "makeACall": "Make a call",
+    "copyright": "Hydro Seal Insulation Works 2025 | All Rights Reserved",
+    "privacyPolicy": "Privacy Policy",
+    "contactUs": "Contact Us"
+  },
+  "common": {
+    "viewAll": "View All",
+    "learnMore": "Learn More",
+    "readMore": "Read More",
+    "getStarted": "Get Started",
+    "contactUs": "Contact Us",
+    "callNow": "Call Now",
+    "emailNow": "Email Now",
+    "getFreeQuote": "Get Free Quote",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "loading": "Loading...",
+    "search": "Search"
+  },
+  "projects": {
+    "title": "Our Projects",
+    "subtitle": "Featured Work",
+    "description": "Explore our portfolio of successful insulation and waterproofing projects",
+    "viewProject": "View Project"
+  },
+  "facilities": {
+    "title": "Our Facilities",
+    "subtitle": "State-of-the-Art Infrastructure",
+    "description": "Modern facilities equipped with advanced technology for superior service delivery"
+  },
+  "qualityHSE": {
+    "title": "Quality & HSE",
+    "subtitle": "Safety First, Quality Always",
+    "description": "Committed to the highest standards of quality, health, safety, and environmental protection"
+  },
+  "clients": {
+    "title": "Our Clients",
+    "subtitle": "Trusted by Leading Organizations",
+    "description": "We are proud to serve a diverse range of clients across the UAE"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Latest News & Insights",
+    "readMore": "Read More",
+    "by": "By",
+    "comments": "Comments",
+    "share": "Share"
+  }
+}
+
