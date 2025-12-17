@@ -1,6 +1,8 @@
 "use client";
 import { useMemo } from 'react';
 import ServicesDetails from '../../../../public/assets/img/service/service-details.png';
+import ThermalInsulation2 from '../../../../public/assets/img/Thermal Insulation 2.jpg';
+import WaterproofingSolutions from '../../../../public/assets/img/Waterproofing Solutions.jpg';
 import image1 from '../../../../public/assets/img/icon/service-details-icon-2.png';
 import image2 from '../../../../public/assets/img/icon/service-details-icon.png';
 import { ttlocksGalleryData } from '@/components/data/ttlocks-data';
@@ -8,6 +10,20 @@ import GalleryGrid from '@/components/pages/homes/home-5/ttlocks-gallery/Gallery
 import VideoSection from '@/components/pages/homes/home-5/ttlocks-gallery/VideoSection';
 
 const ServicesSingleMain = ({serviceDetails}) => {
+    // Use custom images for specific services
+    const getServiceImage = () => {
+        switch(serviceDetails?.id) {
+            case 'thermal-insulation':
+                return ThermalInsulation2;
+            case 'waterproofing-solutions':
+                return WaterproofingSolutions;
+            default:
+                return ServicesDetails;
+        }
+    };
+    
+    const serviceImage = getServiceImage();
+    
     return (
         <>
         <div className="service__details section-padding">
@@ -15,7 +31,7 @@ const ServicesSingleMain = ({serviceDetails}) => {
                 <div className="row">
                     <div className="col-xl-12">
                         <div className="service__details-thumb">
-                            <img src={ServicesDetails.src} alt={serviceDetails.title} />
+                            <img src={serviceImage.src} alt={serviceDetails.title} />
                             <div className="service__details-thumb-icon">
                                 <div className="service__details-thumb-icon-wrapper">
                                     <img src={image1.src} alt="Service Icon" />
