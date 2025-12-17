@@ -1,5 +1,6 @@
 "use client";
 import { useMemo } from 'react';
+import { useTranslations } from 'next-intl';
 import ServicesDetails from '../../../../public/assets/img/service/service-details.png';
 import ThermalInsulation2 from '../../../../public/assets/img/Thermal Insulation 2.jpg';
 import WaterproofingSolutions from '../../../../public/assets/img/Waterproofing Solutions.jpg';
@@ -16,6 +17,7 @@ import GalleryGrid from '@/components/pages/homes/home-5/ttlocks-gallery/Gallery
 import VideoSection from '@/components/pages/homes/home-5/ttlocks-gallery/VideoSection';
 
 const ServicesSingleMain = ({serviceDetails}) => {
+    const t = useTranslations('serviceDetail');
     // Use custom images for specific services
     const getServiceImage = () => {
         switch(serviceDetails?.id) {
@@ -97,18 +99,18 @@ const ServicesSingleMain = ({serviceDetails}) => {
                                     <div className="icon">
                                         <img src={image2.src} alt="Service Benefits" />
                                     </div>
-                                    <h4 className="mb-4">Project Benefits</h4>
-                                    <p className="m-0">Protect your property investment with our {serviceDetails.title.toLowerCase()} solutions that deliver superior performance, energy savings, and long-lasting protection.</p>
+                                    <h4 className="mb-4">{t('projectBenefits')}</h4>
+                                    <p className="m-0">{t('benefitsDescription')}</p>
                                 </div>
                             </div>
 
-                            <h3 className="sub-heading">Why Choose Our {serviceDetails.title} Services?</h3>
+                            <h3 className="sub-heading">{t('whyChooseServices')}</h3>
                             <div className="row mt-4">
                                 <div className="col-md-6">
                                     {serviceDetails.benefits?.slice(0, 3).map((benefit, index) => (
                                         <div key={index} className="benefit-item mb-4">
                                             <h5><i className="flaticon-check me-2"></i>{benefit}</h5>
-                                            <p>Experience superior quality and performance with our proven {serviceDetails.title.toLowerCase()} expertise and premium materials.</p>
+                                            <p>{t('benefitText1')}</p>
                                         </div>
                                     ))}
                                 </div>
@@ -116,7 +118,7 @@ const ServicesSingleMain = ({serviceDetails}) => {
                                     {serviceDetails.benefits?.slice(3, 6).map((benefit, index) => (
                                         <div key={index} className="benefit-item mb-4">
                                             <h5><i className="flaticon-check me-2"></i>{benefit}</h5>
-                                            <p>Leverage our 15+ years of experience to achieve your project goals with professional {serviceDetails.title.toLowerCase()} solutions.</p>
+                                            <p>{t('benefitText2')}</p>
                                         </div>
                                     ))}
                                 </div>

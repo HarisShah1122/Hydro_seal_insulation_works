@@ -145,6 +145,13 @@
     "message": "Message",
     "submit": "Submit Now"
   },
+  "serviceDetail": {
+    "projectBenefits": "Project Benefits",
+    "benefitsDescription": "Protect your property investment with our solutions that deliver superior performance, energy savings, and long-lasting protection.",
+    "whyChooseServices": "Why Choose Our Services?",
+    "benefitText1": "Experience superior quality and performance with our proven expertise and premium materials.",
+    "benefitText2": "Leverage our 15+ years of experience to achieve your project goals with professional solutions."
+  },
   "footer": {
     "followUs": "Follow us",
     "service": "Service",
@@ -171,6 +178,11 @@
     "subtitle": "State-of-the-Art Infrastructure",
     "description": "Modern facilities equipped with advanced technology for superior service delivery"
   },
+  "facilitiesPage": {
+    "title": "Our Facilities",
+    "subtitle": "State-of-the-Art Infrastructure",
+    "description": "Hydro Seal Insulation Works maintains modern facilities and advanced equipment to deliver superior insulation and waterproofing services across the UAE."
+  },
   "qualityHSE": {
     "title": "Quality & HSE",
     "subtitle": "Safety First, Quality Always",
@@ -180,6 +192,11 @@
     "title": "Our Clients",
     "subtitle": "Trusted by Leading Organizations",
     "description": "We are proud to serve a diverse range of clients across the UAE"
+  },
+  "clientsPage": {
+    "title": "Our Clients",
+    "subtitle": "Trusted by Leading Organizations",
+    "description": "We are proud to serve a diverse range of clients across the UAE, from government institutions to private enterprises. Our commitment to quality and excellence has earned us the trust of prestigious organizations."
   },
   "blog": {
     "title": "Blog",

@@ -1,4 +1,5 @@
 "use client"
+import { useTranslations } from 'next-intl';
 import SEO from "@/components/data/seo";
 import HeaderOne from "@/components/layout/headers/header/header-one";
 import BreadCrumb from "../common/breadcrumb";
@@ -11,6 +12,7 @@ import brand4 from "../../../public/assets/img/brand/brand-4.png";
 import brand5 from "../../../public/assets/img/brand/brand-5.png";
 
 const ClientsPage = () => {
+    const t = useTranslations('clientsPage');
     const clientCategories = [
         {
             title: "Government & Public Sector",
@@ -72,16 +74,16 @@ const ClientsPage = () => {
         <>
             <SEO pageTitle="Our Clients" />        
             <HeaderOne />
-            <BreadCrumb title="Our Clients" innerTitle="Clients" />
+            <BreadCrumb title="clients" innerTitle="Clients" />
             
             <div className="about__one section-padding">
                 <div className="container">
                     <div className="row mb-60">
                         <div className="col-xl-12">
                             <div className="about__one-title text-center">
-                                <span className="subtitle-one">Our Clients</span>
-                                <h2>Trusted by Leading Organizations</h2>
-                                <p className="mt-20">We are proud to serve a diverse range of clients across the UAE, from government institutions to private enterprises. Our commitment to quality and excellence has earned us the trust of prestigious organizations.</p>
+                                <span className="subtitle-one">{t('title')}</span>
+                                <h2>{t('subtitle')}</h2>
+                                <p className="mt-20">{t('description')}</p>
                             </div>
                         </div>
                     </div>

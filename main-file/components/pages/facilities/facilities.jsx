@@ -1,4 +1,5 @@
 "use client"
+import { useTranslations } from 'next-intl';
 import SEO from "@/components/data/seo";
 import HeaderOne from "@/components/layout/headers/header/header-one";
 import BreadCrumb from "../common/breadcrumb";
@@ -6,6 +7,7 @@ import FooterTwo from "@/components/layout/footers/footer-two";
 import ScrollToTop from "../common/scroll/scroll-to-top";
 
 const FacilitiesPage = () => {
+    const t = useTranslations('facilitiesPage');
     const facilities = [
         {
             icon: "flaticon-coding",
@@ -91,16 +93,16 @@ const FacilitiesPage = () => {
         <>
             <SEO pageTitle="Our Facilities" />        
             <HeaderOne />
-            <BreadCrumb title="Our Facilities" innerTitle="Facilities" />
+            <BreadCrumb title="facilities" innerTitle="Facilities" />
             
             <div className="about__one section-padding">
                 <div className="container">
                     <div className="row mb-60">
                         <div className="col-xl-12">
                             <div className="about__one-title text-center">
-                                <span className="subtitle-one">Our Facilities</span>
-                                <h2>State-of-the-Art Infrastructure</h2>
-                                <p className="mt-20">Hydro Seal Insulation Works maintains modern facilities and advanced equipment to deliver superior insulation and waterproofing services across the UAE.</p>
+                                <span className="subtitle-one">{t('title')}</span>
+                                <h2>{t('subtitle')}</h2>
+                                <p className="mt-20">{t('description')}</p>
                             </div>
                         </div>
                     </div>

@@ -11,7 +11,7 @@ const PortfolioTowColumns = () => {
         <>
             <SEO pageTitle='Portfolio Grid - 02 Columns' />
             <HeaderOne />
-            <BreadCrumb title="Portfolio" />
+            <BreadCrumb title="projects" />
             <TwoColumns />        
             <FooterTwo />    
             <ScrollToTop />      
