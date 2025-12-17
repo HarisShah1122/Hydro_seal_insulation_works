@@ -8,6 +8,7 @@ import AcousticInsulation from '../../../../public/assets/img/Acoustic Insulatio
 import AcousticInsulation2 from '../../../../public/assets/img/Acoustic Insulation 2.jpg';
 import AcousticInsulation3 from '../../../../public/assets/img/Acoustic Insulation 3.jpg';
 import FireProtectionInsulation from '../../../../public/assets/img/Fire Protection Insulation.jpg';
+import SpecializedCoatings from '../../../../public/assets/img/Specialized Coatings.jpg';
 import image1 from '../../../../public/assets/img/icon/service-details-icon-2.png';
 import image2 from '../../../../public/assets/img/icon/service-details-icon.png';
 import { ttlocksGalleryData } from '@/components/data/ttlocks-data';
@@ -28,6 +29,8 @@ const ServicesSingleMain = ({serviceDetails}) => {
                 return AcousticInsulation;
             case 'fire-protection-insulation':
                 return FireProtectionInsulation;
+            case 'specialized-coatings':
+                return SpecializedCoatings;
             default:
                 return ServicesDetails;
         }
