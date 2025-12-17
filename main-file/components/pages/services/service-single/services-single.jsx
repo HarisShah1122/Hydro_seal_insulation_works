@@ -3,6 +3,11 @@ import { useMemo } from 'react';
 import ServicesDetails from '../../../../public/assets/img/service/service-details.png';
 import ThermalInsulation2 from '../../../../public/assets/img/Thermal Insulation 2.jpg';
 import WaterproofingSolutions from '../../../../public/assets/img/Waterproofing Solutions.jpg';
+import HVACInsulation from '../../../../public/assets/img/HVAC Insulation.jpg';
+import AcousticInsulation from '../../../../public/assets/img/Acoustic Insulation.jpg';
+import AcousticInsulation2 from '../../../../public/assets/img/Acoustic Insulation 2.jpg';
+import AcousticInsulation3 from '../../../../public/assets/img/Acoustic Insulation 3.jpg';
+import FireProtectionInsulation from '../../../../public/assets/img/Fire Protection Insulation.jpg';
 import image1 from '../../../../public/assets/img/icon/service-details-icon-2.png';
 import image2 from '../../../../public/assets/img/icon/service-details-icon.png';
 import { ttlocksGalleryData } from '@/components/data/ttlocks-data';
@@ -17,6 +22,12 @@ const ServicesSingleMain = ({serviceDetails}) => {
                 return ThermalInsulation2;
             case 'waterproofing-solutions':
                 return WaterproofingSolutions;
+            case 'hvac-insulation':
+                return HVACInsulation;
+            case 'acoustic-insulation':
+                return AcousticInsulation;
+            case 'fire-protection-insulation':
+                return FireProtectionInsulation;
             default:
                 return ServicesDetails;
         }
@@ -30,14 +41,25 @@ const ServicesSingleMain = ({serviceDetails}) => {
             <div className="container">
                 <div className="row">
                     <div className="col-xl-12">
-                        <div className="service__details-thumb">
-                            <img src={serviceImage.src} alt={serviceDetails.title} />
-                            <div className="service__details-thumb-icon">
-                                <div className="service__details-thumb-icon-wrapper">
-                                    <img src={image1.src} alt="Service Icon" />
+                        {/* Display two images for Acoustic Insulation */}
+                        {serviceDetails?.id === 'acoustic-insulation' ? (
+                            <div className="row mb-4">
+                                <div className="col-md-6">
+                                    <div className="service__details-thumb">
+                                        <img src={AcousticInsulation3.src} alt={serviceDetails.title} style={{width: '100%', maxHeight: '500px', objectFit: 'contain'}} />
+                                    </div>
+                                </div>
+                                <div className="col-md-6">
+                                    <div className="service__details-thumb">
+                                        <img src={AcousticInsulation2.src} alt={serviceDetails.title + ' 2'} style={{width: '100%', maxHeight: '500px', objectFit: 'contain'}} />
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        ) : (
+                            <div className="service__details-thumb">
+                                <img src={serviceImage.src} alt={serviceDetails.title} style={{width: '100%', maxHeight: '500px', objectFit: 'contain'}} />
+                            </div>
+                        )}
                         <div className="service__details-content">
                             <h2>{serviceDetails.title}: {serviceDetails.subtitle}</h2>
                             <p>{serviceDetails.overview}</p>
