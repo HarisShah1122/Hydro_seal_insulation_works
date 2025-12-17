@@ -6,7 +6,7 @@ import brand2 from "../../../../public/assets/img/brand/brand-2.png";
 import brand3 from "../../../../public/assets/img/brand/brand-3.png";
 import brand4 from "../../../../public/assets/img/brand/brand-4.png";
 import brand5 from "../../../../public/assets/img/brand/brand-5.png";
-import about1 from "../../../../public/assets/img/about/about-five-1.png";
+import about1 from "../../../../public/assets/img/Trusted Partner in Insulation Solutions.jpg";
 import about2 from "../../../../public/assets/img/about/about-five-2.png";
 import aboutBg from "../../../../public/assets/img/about/about-five-bg.png";
 

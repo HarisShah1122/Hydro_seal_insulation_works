@@ -3,8 +3,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useTranslations } from 'next-intl';
 import bannerBg from "../../../../public/assets/img/banner/banner-five-bg.png";
-import banner1 from "../../../../public/assets/img/banner/banner-five.png";
-import banner2 from "../../../../public/assets/img/banner/banner-five-2.png";
+import banner1 from "../../../../public/assets/img/Excellence in Insulation & Waterproofing Solutions.jpg";
 
 const BannerFive = () => {
     const t = useTranslations('home');
@@ -35,8 +34,7 @@ const BannerFive = () => {
                         <div className="col-xl-5 col-lg-6 col-md-9">
                             <div className="banner__five-image">
                                 <div className="banner__five-image-wrapper">
-                                    <img src={banner1.src} alt="image" />
-                                    <img src={banner2.src} className="img-2 animate-y-axis" alt="image" />
+                                    <img src={banner1.src} alt="Excellence in Insulation & Waterproofing Solutions" />
                                 </div>
                             </div>
                         </div>
