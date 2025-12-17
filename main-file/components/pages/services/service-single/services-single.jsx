@@ -12,12 +12,14 @@ import FireProtectionInsulation from '../../../../public/assets/img/Fire Protect
 import SpecializedCoatings from '../../../../public/assets/img/Specialized Coatings.jpg';
 import image1 from '../../../../public/assets/img/icon/service-details-icon-2.png';
 import image2 from '../../../../public/assets/img/icon/service-details-icon.png';
-import { ttlocksGalleryData } from '@/components/data/ttlocks-data';
+import { getTtlocksGalleryData } from '@/components/data/ttlocks-data';
 import GalleryGrid from '@/components/pages/homes/home-5/ttlocks-gallery/GalleryGrid';
 import VideoSection from '@/components/pages/homes/home-5/ttlocks-gallery/VideoSection';
 
 const ServicesSingleMain = ({serviceDetails}) => {
     const t = useTranslations('serviceDetail');
+    const tProjects = useTranslations('projects');
+    const galleryData = getTtlocksGalleryData(tProjects);
     // Use custom images for specific services
     const getServiceImage = () => {
         switch(serviceDetails?.id) {
@@ -71,13 +73,13 @@ const ServicesSingleMain = ({serviceDetails}) => {
     
                             {/* Project Gallery for Thermal Insulation Service */}
                             {serviceDetails?.id === 'thermal-insulation' && (
-                                <section className="ttlocks__gallery-section mt-5 mb-5" aria-label="Featured Insulation Projects">
+                                <section className="ttlocks__gallery-section mt-5 mb-5" aria-label={tProjects('title')}>
                                     <header>
-                                        <h3 className="sub-heading">Featured Insulation Projects</h3>
-                                        <p>Explore our portfolio of successful insulation projects across healthcare, education, residential, and commercial sectors.</p>
+                                        <h3 className="sub-heading">{tProjects('title')}</h3>
+                                        <p>{tProjects('descriptionShort')}</p>
                                     </header>
                                     <div className="row gy-5 mt-4">
-                                        <GalleryGrid items={ttlocksGalleryData} headingTag="h4" />
+                                        <GalleryGrid items={galleryData} headingTag="h4" />
                                     </div>
                                 </section>
                             )}

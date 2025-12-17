@@ -19,7 +19,7 @@ const RequestQuoteMain = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('Quote Request Submitted:', formData);
-        alert('Thank you! We will contact you shortly with a quote.');
+        alert(t('successMessage'));
         // Here you can integrate with EmailJS or your backend API
     };
 
@@ -38,61 +38,61 @@ const RequestQuoteMain = () => {
                 <form onSubmit={handleSubmit}>
                     <div className="request-quote__area-inputs">
                         <div className="request-quote__area-input-field">
-                            <label htmlFor="first-name">First Name *</label>
+                            <label htmlFor="first-name">{t('firstName')} {t('required')}</label>
                             <input 
                                 type="text" 
                                 id="first-name" 
-                                placeholder="First Name" 
+                                placeholder={t('firstNamePlaceholder')} 
                                 value={formData.firstName}
                                 onChange={(e) => setFormData({...formData, firstName: e.target.value})}
                                 required
                             />
                         </div>
                         <div className="request-quote__area-input-field">
-                            <label htmlFor="last-name">Last Name *</label>
+                            <label htmlFor="last-name">{t('lastName')} {t('required')}</label>
                             <input 
                                 type="text" 
                                 id="last-name" 
-                                placeholder="Last Name" 
+                                placeholder={t('lastNamePlaceholder')} 
                                 value={formData.lastName}
                                 onChange={(e) => setFormData({...formData, lastName: e.target.value})}
                                 required
                             />
                         </div>
                         <div className="request-quote__area-input-field">
-                            <label htmlFor="email">Email Address *</label>
+                            <label htmlFor="email">{t('email')} {t('required')}</label>
                             <input 
                                 type="email" 
                                 id="email" 
-                                placeholder="Email" 
+                                placeholder={t('emailPlaceholder')} 
                                 value={formData.email}
                                 onChange={(e) => setFormData({...formData, email: e.target.value})}
                                 required
                             />
                         </div>
                         <div className="request-quote__area-input-field">
-                            <label htmlFor="number">Phone Number *</label>
+                            <label htmlFor="number">{t('phone')} {t('required')}</label>
                             <input 
                                 type="text" 
                                 id="number" 
-                                placeholder="+971 50 123 4567" 
+                                placeholder={t('phonePlaceholder')} 
                                 value={formData.phone}
                                 onChange={(e) => setFormData({...formData, phone: e.target.value})}
                                 required
                             />
                         </div>
                         <div className="request-quote__area-input-field">
-                            <label htmlFor="company">Company/Organization</label>
+                            <label htmlFor="company">{t('company')}</label>
                             <input 
                                 type="text" 
                                 id="company" 
-                                placeholder="Your Company Name" 
+                                placeholder={t('companyPlaceholder')} 
                                 value={formData.company}
                                 onChange={(e) => setFormData({...formData, company: e.target.value})}
                             />
                         </div>
                         <div className="request-quote__area-input-field">
-                            <label htmlFor="project-type">Project Type *</label>
+                            <label htmlFor="project-type">{t('projectType')} {t('required')}</label>
                             <select 
                                 id="project-type" 
                                 value={formData.projectType}
@@ -100,21 +100,21 @@ const RequestQuoteMain = () => {
                                 required
                                 style={{padding: '15px', width: '100%', border: '1px solid #e0e0e0', borderRadius: '5px'}}
                             >
-                                <option value="">Select Project Type</option>
-                                <option value="residential">Residential</option>
-                                <option value="commercial">Commercial</option>
-                                <option value="industrial">Industrial</option>
-                                <option value="healthcare">Healthcare Facility</option>
-                                <option value="education">Educational Facility</option>
-                                <option value="government">Government Project</option>
+                                <option value="">{t('selectProjectType')}</option>
+                                <option value="residential">{t('residential')}</option>
+                                <option value="commercial">{t('commercial')}</option>
+                                <option value="industrial">{t('industrial')}</option>
+                                <option value="healthcare">{t('healthcare')}</option>
+                                <option value="education">{t('education')}</option>
+                                <option value="government">{t('government')}</option>
                             </select>
                         </div>
                         <div className="request-quote__area-input-field">
-                            <label htmlFor="location">Project Location *</label>
+                            <label htmlFor="location">{t('location')} {t('required')}</label>
                             <input 
                                 type="text" 
                                 id="location" 
-                                placeholder="Al Ain, Abu Dhabi" 
+                                placeholder={t('locationPlaceholder')} 
                                 value={formData.location}
                                 onChange={(e) => setFormData({...formData, location: e.target.value})}
                                 required
@@ -122,7 +122,7 @@ const RequestQuoteMain = () => {
                         </div>
                     </div>
                     <div className="request-quote__area-service-input">
-                        <span>What services do you need? *</span>
+                        <span>{t('servicesQuestion')} {t('required')}</span>
                         <div className="request-quote__area-service-input-single">
                             <input 
                                 type="checkbox" 
@@ -130,7 +130,7 @@ const RequestQuoteMain = () => {
                                 checked={formData.services.includes('thermal-insulation')}
                                 onChange={() => handleCheckboxChange('thermal-insulation')}
                             />
-                            <label style={{marginLeft: '10px'}} htmlFor="thermal-insulation">Thermal Insulation</label>
+                            <label style={{marginLeft: '10px'}} htmlFor="thermal-insulation">{t('thermalInsulation')}</label>
                         </div>
                         <div className="request-quote__area-service-input-single">
                             <input 
@@ -139,7 +139,7 @@ const RequestQuoteMain = () => {
                                 checked={formData.services.includes('waterproofing')}
                                 onChange={() => handleCheckboxChange('waterproofing')}
                             />
-                            <label style={{marginLeft: '10px'}} htmlFor="waterproofing">Waterproofing Solutions</label>
+                            <label style={{marginLeft: '10px'}} htmlFor="waterproofing">{t('waterproofing')}</label>
                         </div>
                         <div className="request-quote__area-service-input-single">
                             <input 
@@ -148,7 +148,7 @@ const RequestQuoteMain = () => {
                                 checked={formData.services.includes('hvac-insulation')}
                                 onChange={() => handleCheckboxChange('hvac-insulation')}
                             />
-                            <label style={{marginLeft: '10px'}} htmlFor="hvac-insulation">HVAC Insulation</label>
+                            <label style={{marginLeft: '10px'}} htmlFor="hvac-insulation">{t('hvacInsulation')}</label>
                         </div>
                         <div className="request-quote__area-service-input-single">
                             <input 
@@ -157,7 +157,7 @@ const RequestQuoteMain = () => {
                                 checked={formData.services.includes('acoustic-insulation')}
                                 onChange={() => handleCheckboxChange('acoustic-insulation')}
                             />
-                            <label style={{marginLeft: '10px'}} htmlFor="acoustic-insulation">Acoustic Insulation</label>
+                            <label style={{marginLeft: '10px'}} htmlFor="acoustic-insulation">{t('acousticInsulation')}</label>
                         </div>
                         <div className="request-quote__area-service-input-single">
                             <input 
@@ -166,7 +166,7 @@ const RequestQuoteMain = () => {
                                 checked={formData.services.includes('fire-protection')}
                                 onChange={() => handleCheckboxChange('fire-protection')}
                             />
-                            <label style={{marginLeft: '10px'}} htmlFor="fire-protection">Fire Protection Insulation</label>
+                            <label style={{marginLeft: '10px'}} htmlFor="fire-protection">{t('fireProtection')}</label>
                         </div>
                         <div className="request-quote__area-service-input-single">
                             <input 
@@ -175,18 +175,18 @@ const RequestQuoteMain = () => {
                                 checked={formData.services.includes('coatings')}
                                 onChange={() => handleCheckboxChange('coatings')}
                             />
-                            <label style={{marginLeft: '10px'}} htmlFor="coatings">Specialized Coatings</label>
+                            <label style={{marginLeft: '10px'}} htmlFor="coatings">{t('coatings')}</label>
                         </div>
                     </div>
-                    <label htmlFor="message" className="mb-2">Project Details & Requirements *</label>
+                    <label htmlFor="message" className="mb-2">{t('projectDetails')} {t('required')}</label>
                     <textarea 
                         id="message" 
-                        placeholder="Please provide details about your project, timeline, and any specific requirements..."
+                        placeholder={t('projectDetailsPlaceholder')}
                         value={formData.message}
                         onChange={(e) => setFormData({...formData, message: e.target.value})}
                         required
                     ></textarea>
-                    <input type="submit" value="Submit Quote Request" className="btn-two mt-4" />
+                    <input type="submit" value={t('submit')} className="btn-two mt-4" />
                 </form>
             </div>
         </div>

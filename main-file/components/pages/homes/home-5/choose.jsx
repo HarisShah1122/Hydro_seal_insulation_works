@@ -1,7 +1,6 @@
 "use client";
 import { useTranslations } from 'next-intl';
-import image1 from "../../../../public/assets/img/why-choose-us/why-choose-us-four-2.png";
-import image2 from "../../../../public/assets/img/why-choose-us/why-choose-us-four.png";
+import image2 from "../../../../public/assets/img/Your Trusted Insulation Partner.jpg";
 
 const Choose = () => {
     const t = useTranslations('whyChoose');
@@ -12,7 +11,6 @@ const Choose = () => {
                 <div className="row gy-4 align-items-center">
                     <div className="col-xl-6 col-lg-6 col-md-10">
                         <div className="why-choose-us__four-image">
-                            <img src={image1.src} alt="image" className="why-choose-us__four-floating-image animate-y-axis-slider" />
                             <img src={image2.src} alt="image" />
                         </div>
                     </div>
@@ -53,8 +51,8 @@ const Choose = () => {
                                     <div className="single-service">
                                         <i className="fas fa-check-circle"></i>
                                         <div className="single-service-content">
-                                            <h4>Guaranteed Results</h4>
-                                            <p>Warranty-backed work with customer satisfaction guarantee</p>
+                                            <h4>{t('feature5Title')}</h4>
+                                            <p>{t('feature5Desc')}</p>
                                         </div>
                                     </div>
                                 </div>

@@ -5,6 +5,38 @@ import project4 from "../../public/assets/img/hydro seal projects/Rooftop_AC_Ins
 
 export const TTLOCKS_VIDEO_PATH = "/assets/img/ttlocks/ttlock video1.mp4";
 
+export const getTtlocksGalleryData = (t) => [
+    {
+        id: 'project1',
+        image: project1,
+        title: t('project1Title'),
+        description: t('project1Description'),
+        alt: t('project1Alt')
+    },
+    {
+        id: 'project2',
+        image: project2,
+        title: t('project2Title'),
+        description: t('project2Description'),
+        alt: t('project2Alt')
+    },
+    {
+        id: 'project3',
+        image: project3,
+        title: t('project3Title'),
+        description: t('project3Description'),
+        alt: t('project3Alt')
+    },
+    {
+        id: 'project4',
+        image: project4,
+        title: t('project4Title'),
+        description: t('project4Description'),
+        alt: t('project4Alt')
+    }
+];
+
+// For backward compatibility, export static data (will use English by default)
 export const ttlocksGalleryData = [
     {
         id: 'project1',
@@ -36,6 +68,14 @@ export const ttlocksGalleryData = [
     }
 ];
 
+export const getTtlocksVideoData = (t) => ({
+    title: t('videoTitle'),
+    description: t('videoDescription'),
+    src: TTLOCKS_VIDEO_PATH,
+    alt: t('videoAlt')
+});
+
+// For backward compatibility
 export const ttlocksVideoData = {
     title: "Our Insulation Process",
     description: "Discover our professional approach to insulation and waterproofing, showcasing quality materials, skilled craftsmanship, and commitment to excellence.",

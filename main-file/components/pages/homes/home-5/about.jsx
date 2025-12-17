@@ -66,7 +66,6 @@ const AboutFive = () => {
                         <div className="about__five-image">
                             <div className="about__five-image-wrapper">
                                 <img src={about1.src} alt="image" />
-                                <img src={about2.src} alt="image" className="image-2 animate-y-axis-slider" />
                             </div>
                         </div>
                     </div>
