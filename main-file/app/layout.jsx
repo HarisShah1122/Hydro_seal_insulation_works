@@ -1,6 +1,7 @@
 import "./globals.css";
 import BootstrapProvider from "../components/BootstrapProvider";
-import Script from 'next/script';
+import {NextIntlClientProvider} from 'next-intl';
+import {getMessages, getLocale} from 'next-intl/server';
 
 export const metadata = {
     title: 'Hydro Seal Insulation Works',
@@ -15,16 +16,21 @@ export const metadata = {
     }
 };
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
+    const locale = await getLocale();
+    const messages = await getMessages();
+    
     return (
-        <html lang="en">
+        <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'}>
             <head>
                 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
             </head>
             <body>
-                <BootstrapProvider>
-                    {children}
-                </BootstrapProvider>
+                <NextIntlClientProvider messages={messages}>
+                    <BootstrapProvider>
+                        {children}
+                    </BootstrapProvider>
+                </NextIntlClientProvider>
             </body>
         </html>
     );

@@ -1,25 +1,33 @@
 "use client";
 import { useLocale } from 'next-intl';
-import { useRouter, usePathname } from 'next/navigation';
-import { useState } from 'react';
+import { usePathname } from 'next/navigation';
+import { useRouter } from '../navigation';
+import { useState, useTransition } from 'react';
 
 const LanguageSwitcher = () => {
     const locale = useLocale();
     const router = useRouter();
     const pathname = usePathname();
     const [isOpen, setIsOpen] = useState(false);
+    const [isPending, startTransition] = useTransition();
 
     const switchLanguage = (newLocale) => {
-        // Remove current locale from pathname if it exists
-        const pathnameWithoutLocale = pathname.replace(/^\/(en|ar)/, '');
-        
-        // Navigate to new locale
-        const newPath = newLocale === 'en' 
-            ? pathnameWithoutLocale || '/'
-            : `/${newLocale}${pathnameWithoutLocale || '/'}`;
-        
-        router.push(newPath);
-        setIsOpen(false);
+        startTransition(() => {
+            // Set cookie for locale preference
+            document.cookie = `NEXT_LOCALE=${newLocale};path=/;max-age=31536000`;
+            
+            // Remove current locale from pathname if it exists
+            const pathnameWithoutLocale = pathname.replace(/^\/(en|ar)/, '');
+            
+            // Navigate to new locale
+            const newPath = newLocale === 'en' 
+                ? pathnameWithoutLocale || '/'
+                : `/${newLocale}${pathnameWithoutLocale || '/'}`;
+            
+            router.push(newPath);
+            router.refresh();
+            setIsOpen(false);
+        });
     };
 
     const languages = [
