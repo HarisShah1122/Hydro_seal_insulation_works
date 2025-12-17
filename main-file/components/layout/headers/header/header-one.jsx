@@ -8,8 +8,11 @@ import logo2 from "../../../../public/assets/img/logo/hydroseal logo.jpg";
 import MobileMenuPopup from '../mobile-menu/menu-area';
 import Link from 'next/link';
 import LanguageSwitcher from '../../../LanguageSwitcher';
+import { useTranslations } from 'next-intl';
 
 const HeaderOne = ({variant}) => {
+    const t = useTranslations('nav');
+    const tHeader = useTranslations('header');
     const [sidebarOpen, setSidebarOpen] = useState(false);
     const [menuSidebar, setMenuSidebar] = useState(false);
     const [search, setSearch] = useState(false);
@@ -36,13 +39,13 @@ const HeaderOne = ({variant}) => {
                 <div className="row">
                     <div className="col-xl-7 col-md-7">
                         <div className="top__bar-left">
-                            <Link href="tel:+971528595217"><i className="fas fa-phone-alt"></i>052 859 5217</Link>
-                            <Link href="mailto:hydroseal.insulation@gmail.com"><i className="fas fa-envelope"></i>hydroseal.insulation@gmail.com</Link>
+                            <Link href="tel:+971528595217"><i className="fas fa-phone-alt"></i>{tHeader('phone')}</Link>
+                            <Link href="mailto:hydroseal.insulation@gmail.com"><i className="fas fa-envelope"></i>{tHeader('email')}</Link>
                         </div>
                     </div>
                     <div className="col-xl-5 col-md-5">
                         <div className="top__bar-right">
-                            <Link href="https://www.google.com/maps"><i className="fas fa-map-marker-alt"></i>Al Ain, Abu Dhabi</Link>
+                            <Link href="https://www.google.com/maps"><i className="fas fa-map-marker-alt"></i>{tHeader('location')}</Link>
                         </div>
                     </div>
                 </div>
@@ -81,7 +84,7 @@ const HeaderOne = ({variant}) => {
                                 </div>
                             </div>
                             <div className="header__area-menubar-right-box-btn">
-                                <Link className="btn-one" href="/request-quote">Get Quote<i className="fas fa-arrow-right"></i></Link>
+                                <Link className="btn-one" href="/request-quote">{t('getQuote')}<i className="fas fa-arrow-right"></i></Link>
                             </div>
                         <div className="header__area-menubar-right-responsive-menu menu__bar">
                             <i className="flaticon-menu-1" onClick={() => setMenuSidebar(true)}></i>

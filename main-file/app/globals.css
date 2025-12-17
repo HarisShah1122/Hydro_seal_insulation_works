@@ -7,3 +7,94 @@
 @import 'react-modal-video/css/modal-video.min.css';
 @import "../public/assets/css/meanmenu.min.css";
 @import "../public/assets/sass/style.css";
+
+/* RTL Support for Arabic */
+html[dir="rtl"] {
+    direction: rtl;
+}
+
+html[dir="rtl"] body {
+    font-family: 'Cairo', 'Space Grotesk', sans-serif;
+    text-align: right;
+}
+
+/* RTL Header Adjustments */
+html[dir="rtl"] .header__area-menubar {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .header__area-menubar-left {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+html[dir="rtl"] .header__area-menubar-right {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+html[dir="rtl"] .header__area-menubar-right-box {
+    flex-direction: row-reverse;
+}
+
+/* RTL Menu */
+html[dir="rtl"] .main-menu ul {
+    direction: rtl;
+}
+
+html[dir="rtl"] .main-menu ul li {
+    margin-left: 40px;
+    margin-right: 0;
+}
+
+/* RTL Text Alignment */
+html[dir="rtl"] .text-left {
+    text-align: right !important;
+}
+
+html[dir="rtl"] .text-right {
+    text-align: left !important;
+}
+
+/* RTL Margins and Padding */
+html[dir="rtl"] .me-2,
+html[dir="rtl"] .ms-2 {
+    margin-right: 0 !important;
+    margin-left: 0.5rem !important;
+}
+
+html[dir="rtl"] .me-3,
+html[dir="rtl"] .ms-3 {
+    margin-right: 0 !important;
+    margin-left: 1rem !important;
+}
+
+/* RTL Icons */
+html[dir="rtl"] .fa-arrow-right::before {
+    content: "\f060"; /* arrow-left */
+}
+
+html[dir="rtl"] .fa-arrow-left::before {
+    content: "\f061"; /* arrow-right */
+}
+
+/* RTL Footer */
+html[dir="rtl"] .footer__one-widget {
+    text-align: right;
+}
+
+/* RTL Buttons */
+html[dir="rtl"] .btn-one i,
+html[dir="rtl"] .btn-two i {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+/* Language Switcher - Always LTR */
+.language-switcher {
+    direction: ltr !important;
+}
+
+.language-switcher * {
+    direction: ltr !important;
+}

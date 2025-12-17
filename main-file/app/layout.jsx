@@ -19,14 +19,18 @@ export const metadata = {
 export default async function RootLayout({ children }) {
     const locale = await getLocale();
     const messages = await getMessages();
+    const isRTL = locale === 'ar';
     
     return (
-        <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'}>
+        <html lang={locale} dir={isRTL ? 'rtl' : 'ltr'} className={locale}>
             <head>
                 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+                {isRTL && (
+                    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet" />
+                )}
             </head>
             <body>
-                <NextIntlClientProvider messages={messages}>
+                <NextIntlClientProvider locale={locale} messages={messages}>
                     <BootstrapProvider>
                         {children}
                     </BootstrapProvider>

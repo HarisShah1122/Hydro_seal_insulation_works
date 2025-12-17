@@ -1,11 +1,14 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { useTranslations } from 'next-intl';
 import bannerBg from "../../../../public/assets/img/banner/banner-five-bg.png";
 import banner1 from "../../../../public/assets/img/banner/banner-five.png";
 import banner2 from "../../../../public/assets/img/banner/banner-five-2.png";
 
 const BannerFive = () => {
+    const t = useTranslations('home');
+    const tCommon = useTranslations('common');
     const [isClient, setIsClient] = useState(false);
 
     useEffect(() => {
@@ -20,11 +23,11 @@ const BannerFive = () => {
                     <div className="row align-items-center gy-4 justify-content-center">
                         <div className="col-xl-7 col-lg-6">
                             <div className="banner__five-content">
-                                <span className="subtitle-one">Hydro Seal Insulation Works</span>
-                                <h2>Excellence in Insulation & Waterproofing Solutions</h2>
-                                <p>Leading provider of comprehensive insulation and waterproofing services in Al Ain and Abu Dhabi. We deliver quality, safety, and energy-efficient solutions for residential, commercial, and industrial projects.</p>
+                                <span className="subtitle-one">{t('companyName')}</span>
+                                <h2>{t('title')}</h2>
+                                <p>{t('description')}</p>
                                 <div className="banner__five-content-bottom">
-                                    <Link href="/contact" className="btn-two">Contact Us<i className="fa fa-arrow-right"></i></Link>
+                                    <Link href="/contact" className="btn-two">{tCommon('contactUs')}<i className="fa fa-arrow-right"></i></Link>
                                    
                                 </div>
                             </div>

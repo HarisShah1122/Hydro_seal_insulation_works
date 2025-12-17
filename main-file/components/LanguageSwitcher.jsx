@@ -1,102 +1,161 @@
 "use client";
 import { useLocale } from 'next-intl';
-import { usePathname } from 'next/navigation';
-import { useRouter } from '../navigation';
-import { useState, useTransition } from 'react';
+import { useState, useEffect } from 'react';
 
 const LanguageSwitcher = () => {
     const locale = useLocale();
-    const router = useRouter();
-    const pathname = usePathname();
     const [isOpen, setIsOpen] = useState(false);
-    const [isPending, startTransition] = useTransition();
+    const [currentLocale, setCurrentLocale] = useState(locale);
+
+    useEffect(() => {
+        setCurrentLocale(locale);
+    }, [locale]);
 
     const switchLanguage = (newLocale) => {
-        startTransition(() => {
-            // Set cookie for locale preference
-            document.cookie = `NEXT_LOCALE=${newLocale};path=/;max-age=31536000`;
-            
-            // Remove current locale from pathname if it exists
-            const pathnameWithoutLocale = pathname.replace(/^\/(en|ar)/, '');
-            
-            // Navigate to new locale
-            const newPath = newLocale === 'en' 
-                ? pathnameWithoutLocale || '/'
-                : `/${newLocale}${pathnameWithoutLocale || '/'}`;
-            
-            router.push(newPath);
-            router.refresh();
+        if (newLocale === currentLocale) {
             setIsOpen(false);
-        });
+            return;
+        }
+
+        // Set cookie for locale preference
+        document.cookie = `NEXT_LOCALE=${newLocale};path=/;max-age=31536000;SameSite=Lax`;
+        
+        // Update HTML lang and dir attributes
+        document.documentElement.lang = newLocale;
+        document.documentElement.dir = newLocale === 'ar' ? 'rtl' : 'ltr';
+        
+        // Update state
+        setCurrentLocale(newLocale);
+        setIsOpen(false);
+        
+        // Reload page to apply new locale
+        setTimeout(() => {
+            window.location.reload();
+        }, 100);
     };
 
     const languages = [
-        { code: 'en', name: 'English', flag: '🇬🇧' },
-        { code: 'ar', name: 'العربية', flag: '🇦🇪' }
+        { code: 'en', name: 'English', flag: '🇬🇧', shortName: 'EN' },
+        { code: 'ar', name: 'العربية', flag: '🇦🇪', shortName: 'AR' }
     ];
 
-    const currentLanguage = languages.find(lang => lang.code === locale) || languages[0];
+    const currentLanguage = languages.find(lang => lang.code === currentLocale) || languages[0];
 
     return (
-        <div className="language-switcher" style={{ position: 'relative', marginLeft: '20px' }}>
+        <div className="language-switcher" style={{ position: 'relative', marginRight: '15px' }}>
             <button
                 onClick={() => setIsOpen(!isOpen)}
+                className="language-switcher-btn"
                 style={{
                     display: 'flex',
                     alignItems: 'center',
                     gap: '8px',
-                    padding: '8px 15px',
-                    background: '#fff',
-                    border: '1px solid #ddd',
-                    borderRadius: '5px',
+                    padding: '10px 16px',
+                    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                    border: 'none',
+                    borderRadius: '25px',
                     cursor: 'pointer',
                     fontSize: '14px',
-                    fontWeight: '500'
+                    fontWeight: '600',
+                    color: '#fff',
+                    boxShadow: '0 2px 8px rgba(102, 126, 234, 0.4)',
+                    transition: 'all 0.3s ease',
+                    minWidth: '110px',
+                    justifyContent: 'center'
+                }}
+                onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = 'translateY(-2px)';
+                    e.currentTarget.style.boxShadow = '0 4px 12px rgba(102, 126, 234, 0.6)';
+                }}
+                onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = 'translateY(0)';
+                    e.currentTarget.style.boxShadow = '0 2px 8px rgba(102, 126, 234, 0.4)';
                 }}
             >
-                <span>{currentLanguage.flag}</span>
-                <span>{currentLanguage.name}</span>
-                <i className={`fas fa-chevron-${isOpen ? 'up' : 'down'}`} style={{ fontSize: '12px' }}></i>
+                <span style={{ fontSize: '18px' }}>{currentLanguage.flag}</span>
+                <span>{currentLanguage.shortName}</span>
+                <i className={`fas fa-chevron-${isOpen ? 'up' : 'down'}`} style={{ fontSize: '11px' }}></i>
             </button>
 
             {isOpen && (
-                <div
-                    style={{
-                        position: 'absolute',
-                        top: '100%',
-                        right: '0',
-                        marginTop: '5px',
-                        background: '#fff',
-                        border: '1px solid #ddd',
-                        borderRadius: '5px',
-                        boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
-                        minWidth: '150px',
-                        zIndex: 1000
-                    }}
-                >
-                    {languages.map(lang => (
-                        <button
-                            key={lang.code}
-                            onClick={() => switchLanguage(lang.code)}
-                            style={{
-                                width: '100%',
-                                padding: '10px 15px',
-                                background: locale === lang.code ? '#f0f0f0' : 'transparent',
-                                border: 'none',
-                                textAlign: 'left',
-                                cursor: 'pointer',
-                                display: 'flex',
-                                alignItems: 'center',
-                                gap: '10px',
-                                fontSize: '14px',
-                                fontWeight: locale === lang.code ? '600' : '400'
-                            }}
-                        >
-                            <span>{lang.flag}</span>
-                            <span>{lang.name}</span>
-                        </button>
-                    ))}
-                </div>
+                <>
+                    <div
+                        onClick={() => setIsOpen(false)}
+                        style={{
+                            position: 'fixed',
+                            top: 0,
+                            left: 0,
+                            right: 0,
+                            bottom: 0,
+                            zIndex: 999
+                        }}
+                    />
+                    <div
+                        className="language-dropdown"
+                        style={{
+                            position: 'absolute',
+                            top: 'calc(100% + 8px)',
+                            right: '0',
+                            background: '#fff',
+                            border: '1px solid #e0e0e0',
+                            borderRadius: '12px',
+                            boxShadow: '0 8px 24px rgba(0,0,0,0.15)',
+                            minWidth: '180px',
+                            zIndex: 1000,
+                            overflow: 'hidden'
+                        }}
+                    >
+                        {languages.map((lang, index) => (
+                            <button
+                                key={lang.code}
+                                onClick={() => switchLanguage(lang.code)}
+                                style={{
+                                    width: '100%',
+                                    padding: '12px 16px',
+                                    background: currentLocale === lang.code 
+                                        ? 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)' 
+                                        : 'transparent',
+                                    color: currentLocale === lang.code ? '#fff' : '#333',
+                                    border: 'none',
+                                    borderTop: index > 0 ? '1px solid #f0f0f0' : 'none',
+                                    textAlign: 'left',
+                                    cursor: 'pointer',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    gap: '12px',
+                                    fontSize: '14px',
+                                    fontWeight: currentLocale === lang.code ? '600' : '500',
+                                    transition: 'all 0.2s ease'
+                                }}
+                                onMouseEnter={(e) => {
+                                    if (currentLocale !== lang.code) {
+                                        e.currentTarget.style.background = '#f8f9fa';
+                                    }
+                                }}
+                                onMouseLeave={(e) => {
+                                    if (currentLocale !== lang.code) {
+                                        e.currentTarget.style.background = 'transparent';
+                                    }
+                                }}
+                            >
+                                <span style={{ fontSize: '20px' }}>{lang.flag}</span>
+                                <div style={{ flex: 1 }}>
+                                    <div style={{ fontSize: '14px', fontWeight: '600' }}>{lang.name}</div>
+                                    <div style={{ 
+                                        fontSize: '11px', 
+                                        opacity: 0.8,
+                                        marginTop: '2px'
+                                    }}>
+                                        {lang.code.toUpperCase()}
+                                    </div>
+                                </div>
+                                {currentLocale === lang.code && (
+                                    <i className="fas fa-check" style={{ fontSize: '14px' }}></i>
+                                )}
+                            </button>
+                        ))}
+                    </div>
+                </>
             )}
         </div>
     );

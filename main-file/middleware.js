@@ -1,22 +1,10 @@
-import createMiddleware from 'next-intl/middleware';
+import {NextResponse} from 'next/server';
 
-export default createMiddleware({
-  // A list of all locales that are supported
-  locales: ['en', 'ar'],
- 
-  // Used when no locale matches
-  defaultLocale: 'en',
-  
-  // Automatically redirect to default locale
-  localePrefix: 'as-needed'
-});
+export default function middleware(request) {
+  return NextResponse.next();
+}
  
 export const config = {
-  // Match only internationalized pathnames
-  matcher: [
-    '/',
-    '/(ar|en)/:path*',
-    '/((?!_next|_vercel|.*\\..*).*)'
-  ]
+  matcher: ['/((?!api|_next|_vercel|.*\\..*).*)']
 };
 

@@ -1,7 +1,10 @@
+"use client";
+import { useTranslations } from 'next-intl';
 import image1 from "../../../../public/assets/img/why-choose-us/why-choose-us-four-2.png";
 import image2 from "../../../../public/assets/img/why-choose-us/why-choose-us-four.png";
 
 const Choose = () => {
+    const t = useTranslations('whyChoose');
     return (
         <>
         <div className="why-choose-us__four section-padding" >
@@ -16,35 +19,35 @@ const Choose = () => {
                     <div className="col-xl-5 col-lg-7 col-md-9">
                         <div className="why-choose-us__four-left">
                             <div className="why-choose-us__four-title">
-                                <span className="subtitle-one">Why Choose Us</span>
-                                <h2>Hydro Seal - Your Trusted Insulation Partner</h2>
+                                <span className="subtitle-one">{t('title')}</span>
+                                <h2>{t('subtitle')}</h2>
                                 <div className="why-choose-us__four-content-service">
                                     <div className="single-service">
                                         <i className="fas fa-check-circle"></i>
                                         <div className="single-service-content">
-                                            <h4>15+ Years Experience</h4>
-                                            <p>Proven expertise in insulation and waterproofing solutions</p>
+                                            <h4>{t('feature1Title')}</h4>
+                                            <p>{t('feature1Desc')}</p>
                                         </div>
                                     </div>
                                     <div className="single-service">
                                         <i className="fas fa-check-circle"></i>
                                         <div className="single-service-content">
-                                            <h4>Quality Materials</h4>
-                                            <p>Premium materials from trusted international suppliers</p>
+                                            <h4>{t('feature2Title')}</h4>
+                                            <p>{t('feature2Desc')}</p>
                                         </div>
                                     </div>
                                     <div className="single-service">
                                         <i className="fas fa-check-circle"></i>
                                         <div className="single-service-content">
-                                            <h4>Safety First</h4>
-                                            <p>ISO certified with impeccable safety record</p>
+                                            <h4>{t('feature3Title')}</h4>
+                                            <p>{t('feature3Desc')}</p>
                                         </div>
                                     </div>
                                     <div className="single-service">
                                         <i className="fas fa-check-circle"></i>
                                         <div className="single-service-content">
-                                            <h4>Skilled Workforce</h4>
-                                            <p>Trained and certified technicians and engineers</p>
+                                            <h4>{t('feature4Title')}</h4>
+                                            <p>{t('feature4Desc')}</p>
                                         </div>
                                     </div>
                                     <div className="single-service">

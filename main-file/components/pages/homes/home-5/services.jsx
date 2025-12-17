@@ -1,15 +1,19 @@
+"use client";
 import servicesData from '@/components/data/services-data';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 const ServicesFive = () => {
+    const t = useTranslations('services');
+    const tCommon = useTranslations('common');
     return (
         <>
             <div className="services__five section-padding">
                 <div className="container">
                     <div className="row justify-content-center text-center mb-50">
                         <div className="col-xl-7 col-lg-7 col-md-9">
-                            <span className="subtitle-one">Our Services</span>
-                            <h2>Services to Accelerate Your Business</h2>
+                            <span className="subtitle-one">{t('title')}</span>
+                            <h2>{t('subtitle')}</h2>
                         </div>
                     </div>
                     <div className="row gy-4 justify-content-center">
@@ -25,7 +29,7 @@ const ServicesFive = () => {
                                         <div className="services__five-single-service-content">
                                             <h4>{firstAndSecondWord}</h4>
                                             <p>{data.des}</p>
-                                            <Link href={`/services/${data.id}`} className="btn-three">Read More<i className="fas fa-chevron-right"></i></Link>
+                                            <Link href={`/services/${data.id}`} className="btn-three">{tCommon('readMore')}<i className="fas fa-chevron-right"></i></Link>
                                         </div>
                                     </div>
                                 </div>

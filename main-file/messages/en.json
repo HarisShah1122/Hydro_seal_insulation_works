@@ -1,27 +1,53 @@
 {
-  "nav": {
-    "home": "Home",
-    "about": "About",
-    "services": "Services",
-    "projects": "Projects",
-    "facilities": "Facilities",
-    "qualityHSE": "Quality & HSE",
-    "clients": "Clients",
-    "blog": "Blog",
-    "contact": "Contact",
-    "getQuote": "Get Quote",
-    "requestQuote": "Request Quote"
+  "common": {
+    "contactUs": "Contact Us",
+    "learnMore": "Learn More",
+    "getStarted": "Get Started",
+    "readMore": "Read More",
+    "viewAll": "View All",
+    "callNow": "Call Now",
+    "emailNow": "Email Now",
+    "getFreeQuote": "Get Free Quote",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "loading": "Loading...",
+    "search": "Search"
   },
   "header": {
     "phone": "052 859 5217",
     "email": "hydroseal.insulation@gmail.com",
     "location": "Al Ain, Abu Dhabi"
   },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "projects": "Portfolio",
+    "facilities": "Facilities",
+    "qualityHSE": "Quality & HSE",
+    "clients": "Clients",
+    "blog": "Blog",
+    "contact": "Contact",
+    "getQuote": "Get Quote",
+    "requestQuote": "Request Quote",
+    "thermalInsulation": "Thermal Insulation",
+    "waterproofing": "Waterproofing Solutions",
+    "hvacInsulation": "HVAC Insulation",
+    "acousticInsulation": "Acoustic Insulation",
+    "fireProtection": "Fire Protection",
+    "specializedCoatings": "Specialized Coatings",
+    "more": "More",
+    "ourTeam": "Our Team",
+    "testimonials": "Testimonials",
+    "faq": "FAQ"
+  },
   "home": {
     "welcome": "Welcome to Hydro Seal",
-    "title": "Professional Insulation & Waterproofing Solutions",
+    "companyName": "Hydro Seal Insulation Works",
+    "title": "Excellence in Insulation & Waterproofing Solutions",
     "subtitle": "Your Trusted Partner in the UAE",
-    "description": "Leading provider of thermal insulation, waterproofing, and specialized coating services across the UAE",
+    "description": "Leading provider of comprehensive insulation and waterproofing services in Al Ain and Abu Dhabi. We deliver quality, safety, and energy-efficient solutions for residential, commercial, and industrial projects.",
     "learnMore": "Learn More",
     "ourServices": "Our Services",
     "whyChooseUs": "Why Choose Us",
@@ -29,7 +55,7 @@
   },
   "services": {
     "title": "Our Services",
-    "subtitle": "Comprehensive Insulation Solutions",
+    "subtitle": "Services to Accelerate Your Business",
     "thermalInsulation": "Thermal Insulation",
     "thermalDesc": "Energy Efficiency & Temperature Control",
     "waterproofing": "Waterproofing Solutions",
@@ -46,8 +72,8 @@
     "readMore": "Read More"
   },
   "about": {
-    "title": "About Us",
-    "subtitle": "Your Trusted Insulation Partner",
+    "title": "About us",
+    "subtitle": "Your Trusted Partner in Insulation Solutions",
     "description": "Hydro Seal Insulation Works is a leading provider of comprehensive insulation and waterproofing solutions in the UAE",
     "yearsExperience": "Years of Experience",
     "projectsCompleted": "Projects Completed",
@@ -55,7 +81,33 @@
     "certifiedExperts": "Certified Experts",
     "ourMission": "Our Mission",
     "ourVision": "Our Vision",
-    "ourValues": "Our Values"
+    "ourValues": "Our Values",
+    "visionTitle": "Vision",
+    "visionText": "To be the leading insulation and waterproofing contractor in the UAE, recognized for excellence in quality, safety, and customer satisfaction.",
+    "missionTitle": "Mission",
+    "missionText": "Delivering superior insulation and waterproofing solutions that protect properties, enhance energy efficiency, and exceed client expectations through skilled craftsmanship and commitment to safety."
+  },
+  "workProcess": {
+    "title": "Work Process",
+    "subtitle": "Workflow Journey",
+    "step1Title": "Idea Generation",
+    "step1Desc": "Creativity at this initial stage, we focus on understanding your unique challenge",
+    "step2Title": "Solution Development",
+    "step2Desc": "Transitioning from ideas to actionable solutions, our experts employ cutting-edge technologies",
+    "step3Title": "Outcome Delivery",
+    "step3Desc": "The culmination of our process, outcome delivery, is where plans become reality."
+  },
+  "whyChoose": {
+    "title": "Why Choose Us",
+    "subtitle": "Hydro Seal - Your Trusted Insulation Partner",
+    "feature1Title": "15+ Years Experience",
+    "feature1Desc": "Proven expertise in insulation and waterproofing solutions",
+    "feature2Title": "Quality Materials",
+    "feature2Desc": "Premium materials from trusted international suppliers",
+    "feature3Title": "Safety First",
+    "feature3Desc": "ISO certified with impeccable safety record",
+    "feature4Title": "Skilled Workforce",
+    "feature4Desc": "Trained and certified technicians and engineers"
   },
   "contact": {
     "title": "Contact Us",
@@ -80,24 +132,11 @@
     "readyToStart": "Ready to get started?",
     "requestQuote": "request quote",
     "makeACall": "Make a call",
-    "copyright": "Hydro Seal Insulation Works 2025 | All Rights Reserved",
+    "copyright": "© Hydro Seal Insulation Works 2025 | All Rights Reserved",
     "privacyPolicy": "Privacy Policy",
-    "contactUs": "Contact Us"
-  },
-  "common": {
-    "viewAll": "View All",
-    "learnMore": "Learn More",
-    "readMore": "Read More",
-    "getStarted": "Get Started",
     "contactUs": "Contact Us",
-    "callNow": "Call Now",
-    "emailNow": "Email Now",
-    "getFreeQuote": "Get Free Quote",
-    "back": "Back",
-    "next": "Next",
-    "previous": "Previous",
-    "loading": "Loading...",
-    "search": "Search"
+    "email": "Email",
+    "address": "Address"
   },
   "projects": {
     "title": "Our Projects",
