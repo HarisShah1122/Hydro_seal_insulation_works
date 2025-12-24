@@ -1,11 +1,12 @@
 "use client";
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
-import defaultImage from "../../../public/assets/img/banner/page-banner-img.png";
 import shape from "../../../public/assets/img/shape/page-banner-shape.png";
+import defaultImage from "../../../public/assets/img/page-banner-img.jpg";
 
 const BreadCrumb = ({title, innerTitle, customImage}) => {
     const t = useTranslations('nav');
+    // Use customImage if provided (imported image object), otherwise use default image
     const bannerImage = customImage || defaultImage;
     
     // Map service titles to translation keys
@@ -15,7 +16,8 @@ const BreadCrumb = ({title, innerTitle, customImage}) => {
         'HVAC Insulation': 'hvacInsulation',
         'Acoustic Insulation': 'acousticInsulation',
         'Fire Protection Insulation': 'fireProtection',
-        'Specialized Coatings': 'specializedCoatings'
+        'Specialized Coatings': 'specializedCoatings',
+        'Question & Ans.': 'questionAndAns'
     };
     
     // Get translation key or use title as-is if it's already a key
@@ -25,7 +27,8 @@ const BreadCrumb = ({title, innerTitle, customImage}) => {
     let translatedTitle = title;
     try {
         const translated = t(translationKey);
-        if (translated && translated !== translationKey) {
+        // Check if the translation exists and is not an error fallback (doesn't start with namespace)
+        if (translated && !translated.startsWith('nav.')) {
             translatedTitle = translated;
         }
     } catch (e) {

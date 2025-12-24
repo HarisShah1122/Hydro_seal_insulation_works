@@ -1,8 +1,11 @@
+import thermalLogo from "../../public/assets/img/Services/Thermal Insulation logo.jpg";
+import waterproofingLogo from "../../public/assets/img/Services/Waterproofing Solutions logo.png";
+import hvacLogo from "../../public/assets/img/Services/HVAC Insulation logo.png";
 
 const servicesData = [
     {
         id: 'thermal-insulation',
-        icon: <i className="flaticon-coding"></i>,
+        icon: <img src={thermalLogo.src} alt="Thermal Insulation" style={{width: '60px', height: '60px', objectFit: 'contain'}} />,
         title: 'Thermal Insulation',
         subtitle: 'Energy Efficiency & Temperature Control',
         des: 'Advanced thermal insulation solutions for commercial and residential buildings, ensuring optimal temperature control and energy savings.',
@@ -33,7 +36,7 @@ const servicesData = [
     },
     {
         id: 'waterproofing-solutions',
-        icon: <i className="flaticon-desktop-pc"></i>,
+        icon: <img src={waterproofingLogo.src} alt="Waterproofing Solutions" style={{width: '60px', height: '60px', objectFit: 'contain'}} />,
         title: 'Waterproofing Solutions',
         subtitle: 'Complete Water Damage Protection',
         des: 'Comprehensive waterproofing systems for roofs, basements, foundations, and structures to prevent water infiltration and damage.',
@@ -64,7 +67,7 @@ const servicesData = [
     },
     {
         id: 'hvac-insulation',
-        icon: <i className="flaticon-consultant"></i>,
+        icon: <img src={hvacLogo.src} alt="HVAC Insulation" style={{width: '60px', height: '60px', objectFit: 'contain'}} />,
         title: 'HVAC Insulation',
         subtitle: 'Optimize Your Climate Control Systems',
         des: 'Specialized insulation for HVAC systems, ductwork, and chilled water piping to maximize efficiency and prevent energy loss.',
