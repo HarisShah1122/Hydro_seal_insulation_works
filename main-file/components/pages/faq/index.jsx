@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import SEO from "@/components/data/seo";
 import HeaderOne from "@/components/layout/headers/header/header-one";
 import BreadCrumb from "../common/breadcrumb";
@@ -11,7 +11,7 @@ const Faq = () => {
         <>        
             <SEO pageTitle='FAQ' />
             <HeaderOne />
-            <BreadCrumb title='Question & Ans.' innerTitle="FAQ's" />
+            <BreadCrumb title='questionAndAns' innerTitle="FAQ's" />
             <FaqPage />
             <FooterTwo />
             <ScrollToTop />

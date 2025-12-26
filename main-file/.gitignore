@@ -250,3 +250,5 @@ temp/
 *.tmp
 
 
+
+.vercel
