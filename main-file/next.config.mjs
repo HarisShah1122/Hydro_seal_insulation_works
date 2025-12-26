@@ -4,8 +4,7 @@ const withNextIntl = createNextIntlPlugin('./i18n/request.js');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Simplified config for Vercel
-  output: 'standalone',
+  // Vercel-compatible config (removed standalone output)
   
   // Disable TypeScript checking during build
   typescript: {
