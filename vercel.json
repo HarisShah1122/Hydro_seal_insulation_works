@@ -1,7 +1,5 @@
 {
   "framework": "nextjs",
-  "rootDirectory": "main-file",
-  "buildCommand": "npm install && npm run build",
-  "installCommand": "npm install"
+  "rootDirectory": "main-file"
 }
 
