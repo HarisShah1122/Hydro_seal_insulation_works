@@ -5,11 +5,6 @@ import HeaderOne from "@/components/layout/headers/header/header-one";
 import BreadCrumb from "../common/breadcrumb";
 import FooterTwo from "@/components/layout/footers/footer-two";
 import ScrollToTop from "../common/scroll/scroll-to-top";
-import brand1 from "../../../public/assets/img/brand/brand-1.png";
-import brand2 from "../../../public/assets/img/brand/brand-2.png";
-import brand3 from "../../../public/assets/img/brand/brand-3.png";
-import brand4 from "../../../public/assets/img/brand/brand-4.png";
-import brand5 from "../../../public/assets/img/brand/brand-5.png";
 
 const ClientsPage = () => {
     const t = useTranslations('clientsPage');
@@ -106,55 +101,6 @@ const ClientsPage = () => {
                                 </div>
                             </div>
                         ))}
-                    </div>
-
-                    {/* Client Logos Section */}
-                    <div className="row mt-60">
-                        <div className="col-xl-12">
-                            <div className="text-center mb-40">
-                                <h3>Our Valued Partners</h3>
-                            </div>
-                            <div className="brand__area">
-                                <div className="text__slider">
-                                    <div className="text-slide">
-                                        <div className="sliders scroll">
-                                            <div className="brand__area-item">
-                                                <img src={brand1.src} alt="Client" />
-                                            </div>
-                                            <div className="brand__area-item">
-                                                <img src={brand2.src} alt="Client" />
-                                            </div>
-                                            <div className="brand__area-item">
-                                                <img src={brand3.src} alt="Client" />
-                                            </div>
-                                            <div className="brand__area-item">
-                                                <img src={brand4.src} alt="Client" />
-                                            </div>
-                                            <div className="brand__area-item">
-                                                <img src={brand5.src} alt="Client" />
-                                            </div>
-                                        </div>
-                                        <div className="sliders scroll">
-                                            <div className="brand__area-item">
-                                                <img src={brand1.src} alt="Client" />
-                                            </div>
-                                            <div className="brand__area-item">
-                                                <img src={brand2.src} alt="Client" />
-                                            </div>
-                                            <div className="brand__area-item">
-                                                <img src={brand3.src} alt="Client" />
-                                            </div>
-                                            <div className="brand__area-item">
-                                                <img src={brand4.src} alt="Client" />
-                                            </div>
-                                            <div className="brand__area-item">
-                                                <img src={brand5.src} alt="Client" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
                     {/* Testimonial Section */}
