@@ -8,7 +8,6 @@ import aboutBg from "../../../../public/assets/img/about/about-five-bg.png";
 // Client logos with dynamic imports to handle spaces in filenames
 const client1 = "/assets/img/clients/AL RAHBA HOSPITAL Abu Dhabi.jpeg";
 const client2 = "/assets/img/clients/Royal Care Medical Centre.jpeg";
-const client3 = "/assets/img/clients/EQUATOR General Contracting.jpeg";
 const client4 = "/assets/img/clients/ALBANDARI General Contracting.png";
 const client5 = "/assets/img/clients/SHAMRA General Contracting.png";
 
@@ -31,9 +30,6 @@ const AboutFive = () => {
                                         <img src={client2} alt="Royal Care Medical Centre" />
                                     </div>
                                     <div className="brand__area-item">
-                                        <img src={client3} alt="EQUATOR General Contracting" />
-                                    </div>
-                                    <div className="brand__area-item">
                                         <img src={client4} alt="ALBANDARI General Contracting" />
                                     </div>
                                     <div className="brand__area-item">
@@ -46,9 +42,6 @@ const AboutFive = () => {
                                     </div>
                                     <div className="brand__area-item">
                                         <img src={client2} alt="Royal Care Medical Centre" />
-                                    </div>
-                                    <div className="brand__area-item">
-                                        <img src={client3} alt="EQUATOR General Contracting" />
                                     </div>
                                     <div className="brand__area-item">
                                         <img src={client4} alt="ALBANDARI General Contracting" />
