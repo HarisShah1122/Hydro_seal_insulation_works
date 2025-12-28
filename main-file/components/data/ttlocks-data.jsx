@@ -2,6 +2,10 @@ import project1 from "../../public/assets/img/hydro seal projects/Medical_Center
 import project2 from "../../public/assets/img/hydro seal projects/Garden_City_School_Wide_Angle.jpg";
 import project3 from "../../public/assets/img/hydro seal projects/Residential_Villa_Street_View.jpg";
 import project4 from "../../public/assets/img/hydro seal projects/Rooftop_AC_Installation_Overview.jpg";
+import mosque1 from "../../public/assets/img/mosque/abu-dhabi-mosque-exterior-wide.jpeg";
+import mosque2 from "../../public/assets/img/mosque/integrated-minaret-detail.jpeg";
+import mosque3 from "../../public/assets/img/mosque/modern-masjid-side-perspective.jpeg";
+import mosque4 from "../../public/assets/img/mosque/abu-dhabi-mosque-main-facade.jpeg";
 
 export const TTLOCKS_VIDEO_PATH = "/assets/img/ttlocks/ttlock video1.mp4";
 
@@ -33,6 +37,34 @@ export const getTtlocksGalleryData = (t) => [
         title: t('project4Title'),
         description: t('project4Description'),
         alt: t('project4Alt')
+    },
+    {
+        id: 'mosque1',
+        image: mosque1,
+        title: t('mosque1Title'),
+        description: t('mosque1Description'),
+        alt: t('mosque1Alt')
+    },
+    {
+        id: 'mosque2',
+        image: mosque2,
+        title: t('mosque2Title'),
+        description: t('mosque2Description'),
+        alt: t('mosque2Alt')
+    },
+    {
+        id: 'mosque3',
+        image: mosque3,
+        title: t('mosque3Title'),
+        description: t('mosque3Description'),
+        alt: t('mosque3Alt')
+    },
+    {
+        id: 'mosque4',
+        image: mosque4,
+        title: t('mosque4Title'),
+        description: t('mosque4Description'),
+        alt: t('mosque4Alt')
     }
 ];
 
@@ -65,6 +97,34 @@ export const ttlocksGalleryData = [
         title: "Commercial HVAC Insulation",
         description: "Specialized rooftop HVAC system insulation for a commercial complex. Features advanced pipe insulation, condensation control, and energy-efficient solutions reducing operational costs by 25%.",
         alt: "Rooftop HVAC Insulation Project"
+    },
+    {
+        id: 'mosque1',
+        image: mosque1,
+        title: "Abu Dhabi Mosque Exterior Insulation",
+        description: "Comprehensive thermal insulation and waterproofing system for a prestigious mosque in Abu Dhabi. This project featured advanced insulation materials for domes, minarets, and exterior walls, ensuring optimal temperature control and weather protection.",
+        alt: "Abu Dhabi Mosque Exterior Wide View"
+    },
+    {
+        id: 'mosque2',
+        image: mosque2,
+        title: "Mosque Minaret Detail Insulation",
+        description: "Specialized insulation and protective coating system for mosque minarets. Applied high-performance thermal insulation with weather-resistant finishes to protect architectural details while maintaining energy efficiency.",
+        alt: "Integrated Minaret Detail Insulation"
+    },
+    {
+        id: 'mosque3',
+        image: mosque3,
+        title: "Modern Mosque Side Facade Insulation",
+        description: "Complete thermal insulation and waterproofing solution for modern mosque architecture. Implemented advanced insulation systems for side facades, ensuring energy efficiency and structural protection in harsh UAE climate conditions.",
+        alt: "Modern Masjid Side Perspective"
+    },
+    {
+        id: 'mosque4',
+        image: mosque4,
+        title: "Mosque Main Facade Insulation Project",
+        description: "Premium insulation and protective coating system for mosque main facade. Applied specialized thermal insulation with decorative finishes, ensuring both functional performance and aesthetic excellence for this iconic religious structure.",
+        alt: "Abu Dhabi Mosque Main Facade"
     }
 ];
 

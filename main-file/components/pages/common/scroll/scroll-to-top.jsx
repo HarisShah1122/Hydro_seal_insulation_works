@@ -4,6 +4,8 @@ import useScrollToTop from "./use-scroll-to-top";
 
 const ScrollToTop = () => {
     const { stick, onClickHandler } = useScrollToTop();
+    const phoneNumber = "+971528595217"; // WhatsApp phone number
+    
     useEffect(() => {
         const scrollPath = document.querySelector(".scroll-up path");
         if (!scrollPath) return; // Guard clause to prevent null reference
@@ -29,10 +31,21 @@ const ScrollToTop = () => {
         };
     }, []);
 
+    const handleWhatsAppClick = () => {
+        const message = encodeURIComponent("Hello! I would like to get more information.");
+        window.open(`https://wa.me/${phoneNumber.replace(/\D/g, '')}?text=${message}`, '_blank');
+    };
+
     return (
-        <div className={`scroll-up ${stick && "active-scroll"}`} onClick={onClickHandler}>
-            <svg className="scroll-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102"><path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" /></svg>
-        </div>
+        <>
+            <div className={`scroll-up ${stick && "active-scroll"}`} onClick={onClickHandler}>
+                <svg className="scroll-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102"><path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" /></svg>
+            </div>
+            <div className={`whatsapp-float ${stick && "active-scroll"}`} onClick={handleWhatsAppClick}>
+                <i className="fab fa-whatsapp"></i>
+                <span className="whatsapp-number" dir="ltr">{phoneNumber}</span>
+            </div>
+        </>
     );
 };
 
