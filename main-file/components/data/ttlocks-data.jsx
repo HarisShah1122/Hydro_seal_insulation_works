@@ -176,9 +176,9 @@ export const ttlocksGalleryData = [
     {
         id: 'waterproofing2',
         image: waterproofing2,
-        title: "Large Roof Hydroseal Application",
-        description: "Comprehensive waterproofing application for large commercial and industrial roof surfaces using advanced hydroseal technology.",
-        alt: "Large Roof Hydroseal Application"
+        title: "Large Roof Hydroseal Insulation",
+        description: "Comprehensive waterproofing insulation for large commercial and industrial roof surfaces using advanced hydroseal technology.",
+        alt: "Large Roof Hydroseal Insulation"
     },
     {
         id: 'waterproofing3',
@@ -190,8 +190,8 @@ export const ttlocksGalleryData = [
     {
         id: 'waterproofing4',
         image: waterproofing4,
-        title: "Modern Villa Exterior Sealant Application",
-        description: "Professional exterior sealant application for modern villa designs with emphasis on aesthetics and weather protection.",
+        title: "Modern Villa Exterior Sealant Insulation",
+        description: "Professional exterior sealant insulation for modern villa designs with emphasis on aesthetics and weather protection.",
         alt: "Modern Villa Exterior Sealant"
     },
     {
