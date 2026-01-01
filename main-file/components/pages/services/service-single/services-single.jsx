@@ -12,7 +12,7 @@ import FireProtectionInsulation from '../../../../public/assets/img/Fire Protect
 import SpecializedCoatings from '../../../../public/assets/img/Specialized Coatings.jpg';
 import image1 from '../../../../public/assets/img/icon/service-details-icon-2.png';
 import image2 from '../../../../public/assets/img/icon/service-details-icon.png';
-import { getTtlocksGalleryData } from '@/components/data/ttlocks-data';
+import { getTtlocksGalleryData, getWaterproofingGalleryData } from '@/components/data/ttlocks-data';
 import GalleryGrid from '@/components/pages/homes/home-5/ttlocks-gallery/GalleryGrid';
 import VideoSection from '@/components/pages/homes/home-5/ttlocks-gallery/VideoSection';
 
@@ -20,6 +20,7 @@ const ServicesSingleMain = ({serviceDetails}) => {
     const t = useTranslations('serviceDetail');
     const tProjects = useTranslations('projects');
     const galleryData = getTtlocksGalleryData(tProjects);
+    const waterproofingGalleryData = getWaterproofingGalleryData(tProjects);
     // Use custom images for specific services
     const getServiceImage = () => {
         switch(serviceDetails?.id) {
@@ -80,6 +81,19 @@ const ServicesSingleMain = ({serviceDetails}) => {
                                     </header>
                                     <div className="row gy-5 mt-4">
                                         <GalleryGrid items={galleryData} headingTag="h4" />
+                                    </div>
+                                </section>
+                            )}
+
+                            {/* Project Gallery for Waterproofing Solutions Service */}
+                            {serviceDetails?.id === 'waterproofing-solutions' && (
+                                <section className="ttlocks__gallery-section mt-5 mb-5" aria-label="Rooftop Waterproofing & AC Protection">
+                                    <header>
+                                        <h3 className="sub-heading">Rooftop Waterproofing & AC Protection</h3>
+                                        <p>Explore our comprehensive waterproofing projects showcasing advanced solutions for roofs, AC units, and building exteriors.</p>
+                                    </header>
+                                    <div className="row gy-5 mt-4">
+                                        <GalleryGrid items={waterproofingGalleryData} headingTag="h4" />
                                     </div>
                                 </section>
                             )}

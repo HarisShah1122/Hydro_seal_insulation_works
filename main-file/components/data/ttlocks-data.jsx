@@ -6,6 +6,11 @@ import mosque1 from "../../public/assets/img/mosque/abu-dhabi-mosque-exterior-wi
 import mosque2 from "../../public/assets/img/mosque/integrated-minaret-detail.jpeg";
 import mosque3 from "../../public/assets/img/mosque/modern-masjid-side-perspective.jpeg";
 import mosque4 from "../../public/assets/img/mosque/abu-dhabi-mosque-main-facade.jpeg";
+import waterproofing1 from "../../public/assets/img/Rooftop Waterproofing & AC Protection/ac-unit-base-waterproofing.png";
+import waterproofing2 from "../../public/assets/img/Rooftop Waterproofing & AC Protection/large-roof-hydroseal-application.png";
+import waterproofing3 from "../../public/assets/img/Rooftop Waterproofing & AC Protection/luxury-villa-facade-moisture-protection.png";
+import waterproofing4 from "../../public/assets/img/Rooftop Waterproofing & AC Protection/modern-villa-exterior-sealant.png";
+import waterproofing5 from "../../public/assets/img/Rooftop Waterproofing & AC Protection/residential-boundary-wall-waterproofing.png";
 
 export const TTLOCKS_VIDEO_PATH = "/assets/img/ttlocks/ttlock video1.mp4";
 
@@ -65,6 +70,41 @@ export const getTtlocksGalleryData = (t) => [
         title: t('mosque4Title'),
         description: t('mosque4Description'),
         alt: t('mosque4Alt')
+    },
+    {
+        id: 'waterproofing1',
+        image: waterproofing1,
+        title: t('waterproofing1Title'),
+        description: t('waterproofing1Description'),
+        alt: t('waterproofing1Alt')
+    },
+    {
+        id: 'waterproofing2',
+        image: waterproofing2,
+        title: t('waterproofing2Title'),
+        description: t('waterproofing2Description'),
+        alt: t('waterproofing2Alt')
+    },
+    {
+        id: 'waterproofing3',
+        image: waterproofing3,
+        title: t('waterproofing3Title'),
+        description: t('waterproofing3Description'),
+        alt: t('waterproofing3Alt')
+    },
+    {
+        id: 'waterproofing4',
+        image: waterproofing4,
+        title: t('waterproofing4Title'),
+        description: t('waterproofing4Description'),
+        alt: t('waterproofing4Alt')
+    },
+    {
+        id: 'waterproofing5',
+        image: waterproofing5,
+        title: t('waterproofing5Title'),
+        description: t('waterproofing5Description'),
+        alt: t('waterproofing5Alt')
     }
 ];
 
@@ -125,6 +165,41 @@ export const ttlocksGalleryData = [
         title: "Mosque Main Facade Insulation Project",
         description: "Premium insulation and protective coating system for mosque main facade. Applied specialized thermal insulation with decorative finishes, ensuring both functional performance and aesthetic excellence for this iconic religious structure.",
         alt: "Abu Dhabi Mosque Main Facade"
+    },
+    {
+        id: 'waterproofing1',
+        image: waterproofing1,
+        title: "AC Unit Base Waterproofing",
+        description: "Specialized waterproofing for AC unit bases and surrounding areas to prevent water damage and leakage. Complete protection of HVAC equipment.",
+        alt: "AC Unit Base Waterproofing Project"
+    },
+    {
+        id: 'waterproofing2',
+        image: waterproofing2,
+        title: "Large Roof Hydroseal Application",
+        description: "Comprehensive waterproofing application for large commercial and industrial roof surfaces using advanced hydroseal technology.",
+        alt: "Large Roof Hydroseal Application"
+    },
+    {
+        id: 'waterproofing3',
+        image: waterproofing3,
+        title: "Luxury Villa Facade Moisture Protection",
+        description: "Advanced moisture protection system for luxury villa facades and exterior walls with premium elastomeric coatings.",
+        alt: "Luxury Villa Facade Moisture Protection"
+    },
+    {
+        id: 'waterproofing4',
+        image: waterproofing4,
+        title: "Modern Villa Exterior Sealant Application",
+        description: "Professional exterior sealant application for modern villa designs with emphasis on aesthetics and weather protection.",
+        alt: "Modern Villa Exterior Sealant"
+    },
+    {
+        id: 'waterproofing5',
+        image: waterproofing5,
+        title: "Residential Boundary Wall Waterproofing",
+        description: "Comprehensive waterproofing system for residential boundary walls and perimeter structures to prevent water penetration.",
+        alt: "Residential Boundary Wall Waterproofing"
     }
 ];
 
@@ -142,4 +217,81 @@ export const ttlocksVideoData = {
     src: TTLOCKS_VIDEO_PATH,
     alt: "Hydro Seal Insulation Process"
 };
+
+export const getWaterproofingGalleryData = (t) => [
+    {
+        id: 'waterproofing1',
+        image: waterproofing1,
+        title: t?.('waterproofing1Title') || 'AC Unit Base Waterproofing',
+        description: t?.('waterproofing1Description') || 'Specialized waterproofing for AC unit bases and surrounding areas to prevent water damage and leakage. Complete protection of HVAC equipment.',
+        alt: t?.('waterproofing1Alt') || 'AC Unit Base Waterproofing Project'
+    },
+    {
+        id: 'waterproofing2',
+        image: waterproofing2,
+        title: t?.('waterproofing2Title') || 'Large Roof Hydroseal Application',
+        description: t?.('waterproofing2Description') || 'Comprehensive waterproofing application for large commercial and industrial roof surfaces using advanced hydroseal technology.',
+        alt: t?.('waterproofing2Alt') || 'Large Roof Hydroseal Application'
+    },
+    {
+        id: 'waterproofing3',
+        image: waterproofing3,
+        title: t?.('waterproofing3Title') || 'Luxury Villa Facade Moisture Protection',
+        description: t?.('waterproofing3Description') || 'Advanced moisture protection system for luxury villa facades and exterior walls with premium elastomeric coatings.',
+        alt: t?.('waterproofing3Alt') || 'Luxury Villa Facade Moisture Protection'
+    },
+    {
+        id: 'waterproofing4',
+        image: waterproofing4,
+        title: t?.('waterproofing4Title') || 'Modern Villa Exterior Sealant Application',
+        description: t?.('waterproofing4Description') || 'Professional exterior sealant application for modern villa designs with emphasis on aesthetics and weather protection.',
+        alt: t?.('waterproofing4Alt') || 'Modern Villa Exterior Sealant'
+    },
+    {
+        id: 'waterproofing5',
+        image: waterproofing5,
+        title: t?.('waterproofing5Title') || 'Residential Boundary Wall Waterproofing',
+        description: t?.('waterproofing5Description') || 'Comprehensive waterproofing system for residential boundary walls and perimeter structures to prevent water penetration.',
+        alt: t?.('waterproofing5Alt') || 'Residential Boundary Wall Waterproofing'
+    }
+];
+
+// For backward compatibility
+export const waterproofingGalleryData = [
+    {
+        id: 'waterproofing1',
+        image: waterproofing1,
+        title: 'AC Unit Base Waterproofing',
+        description: 'Specialized waterproofing for AC unit bases and surrounding areas to prevent water damage and leakage. Complete protection of HVAC equipment.',
+        alt: 'AC Unit Base Waterproofing Project'
+    },
+    {
+        id: 'waterproofing2',
+        image: waterproofing2,
+        title: 'Large Roof Hydroseal Application',
+        description: 'Comprehensive waterproofing application for large commercial and industrial roof surfaces using advanced hydroseal technology.',
+        alt: 'Large Roof Hydroseal Application'
+    },
+    {
+        id: 'waterproofing3',
+        image: waterproofing3,
+        title: 'Luxury Villa Facade Moisture Protection',
+        description: 'Advanced moisture protection system for luxury villa facades and exterior walls with premium elastomeric coatings.',
+        alt: 'Luxury Villa Facade Moisture Protection'
+    },
+    {
+        id: 'waterproofing4',
+        image: waterproofing4,
+        title: 'Modern Villa Exterior Sealant Application',
+        description: 'Professional exterior sealant application for modern villa designs with emphasis on aesthetics and weather protection.',
+        alt: 'Modern Villa Exterior Sealant'
+    },
+    {
+        id: 'waterproofing5',
+        image: waterproofing5,
+        title: 'Residential Boundary Wall Waterproofing',
+        description: 'Comprehensive waterproofing system for residential boundary walls and perimeter structures to prevent water penetration.',
+        alt: 'Residential Boundary Wall Waterproofing'
+    }
+];
 

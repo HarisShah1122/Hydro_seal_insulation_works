@@ -8,6 +8,11 @@ import image7 from "../../public/assets/img/hydro seal projects/Residential_Vill
 import image8 from "../../public/assets/img/hydro seal projects/Residential_Villa_Front_Gate.jpg";
 import image9 from "../../public/assets/img/hydro seal projects/Rooftop_AC_Installation_Overview.jpg";
 import image10 from "../../public/assets/img/hydro seal projects/Rooftop_AC_Piping_and_Units.jpg";
+import waterproofingImage1 from "../../public/assets/img/Rooftop Waterproofing & AC Protection/ac-unit-base-waterproofing.png";
+import waterproofingImage2 from "../../public/assets/img/Rooftop Waterproofing & AC Protection/large-roof-hydroseal-application.png";
+import waterproofingImage3 from "../../public/assets/img/Rooftop Waterproofing & AC Protection/luxury-villa-facade-moisture-protection.png";
+import waterproofingImage4 from "../../public/assets/img/Rooftop Waterproofing & AC Protection/modern-villa-exterior-sealant.png";
+import waterproofingImage5 from "../../public/assets/img/Rooftop Waterproofing & AC Protection/residential-boundary-wall-waterproofing.png";
 
 const portfolioData = [
     {        
@@ -119,6 +124,61 @@ const portfolioData = [
         solution: 'Installed PIR insulation on refrigerant lines, armaflex on chilled water pipes, and fiberglass duct wrap on air distribution systems.',
         result: 'Zero energy loss, no condensation dripping, optimal system performance, reduced operating costs',
         category: 'commercial'
+    },
+    {        
+        id: 'ac-unit-base-waterproofing',
+        title: 'AC Unit Base Waterproofing',
+        subtitle: 'Rooftop Waterproofing & AC Protection',
+        image: waterproofingImage1,
+        client: 'Commercial & Residential Projects',
+        scope: 'Specialized waterproofing for AC unit bases and surrounding areas to prevent water damage and leakage',
+        solution: 'Applied premium waterproofing membrane around AC unit bases, created proper drainage systems, and installed protective barriers to prevent water infiltration.',
+        result: 'Complete protection of AC equipment, eliminated water damage risks, extended equipment lifespan, reduced maintenance costs',
+        category: 'waterproofing'
+    },
+    {        
+        id: 'large-roof-hydroseal-application',
+        title: 'Large Roof Hydroseal Application',
+        subtitle: 'Rooftop Waterproofing & AC Protection',
+        image: waterproofingImage2,
+        client: 'Commercial & Industrial Facilities',
+        scope: 'Comprehensive waterproofing application for large commercial and industrial roof surfaces using advanced hydroseal technology',
+        solution: 'Applied high-performance hydroseal membrane system across entire roof surface, ensured proper adhesion and seamless coverage, implemented drainage solutions.',
+        result: 'Complete roof protection, zero leakage issues, enhanced durability, significant reduction in maintenance requirements',
+        category: 'waterproofing'
+    },
+    {        
+        id: 'luxury-villa-facade-moisture-protection',
+        title: 'Luxury Villa Facade Moisture Protection',
+        subtitle: 'Rooftop Waterproofing & AC Protection',
+        image: waterproofingImage3,
+        client: 'Luxury Residential Properties',
+        scope: 'Advanced moisture protection system for luxury villa facades and exterior walls',
+        solution: 'Applied breathable waterproofing membrane, installed proper vapor barriers, used premium elastomeric coatings for long-lasting protection.',
+        result: 'Complete moisture protection, preserved building aesthetics, prevented structural damage, enhanced property value',
+        category: 'waterproofing'
+    },
+    {        
+        id: 'modern-villa-exterior-sealant',
+        title: 'Modern Villa Exterior Sealant Application',
+        subtitle: 'Rooftop Waterproofing & AC Protection',
+        image: waterproofingImage4,
+        client: 'Modern Residential Developments',
+        scope: 'Professional exterior sealant application for modern villa designs with emphasis on aesthetics and protection',
+        solution: 'Applied high-quality exterior sealants, ensured proper surface preparation, used weather-resistant coatings suitable for harsh climate conditions.',
+        result: 'Superior weather protection, maintained modern aesthetic appeal, long-lasting durability, reduced maintenance needs',
+        category: 'waterproofing'
+    },
+    {        
+        id: 'residential-boundary-wall-waterproofing',
+        title: 'Residential Boundary Wall Waterproofing',
+        subtitle: 'Rooftop Waterproofing & AC Protection',
+        image: waterproofingImage5,
+        client: 'Residential Communities',
+        scope: 'Comprehensive waterproofing system for residential boundary walls and perimeter structures',
+        solution: 'Applied waterproofing membrane on boundary walls, installed proper drainage systems, used protective coatings to prevent water penetration and damage.',
+        result: 'Protected boundary structures, prevented water damage, extended wall lifespan, maintained structural integrity',
+        category: 'waterproofing'
     },
 ];
 
