@@ -78,17 +78,6 @@ const FacilitiesPage = () => {
         }
     ];
 
-    const capabilities = [
-        "24/7 Emergency Response Capability",
-        "Mobile Workshop Units for On-site Support",
-        "Material Testing Laboratory",
-        "Computer-Aided Design (CAD) Systems",
-        "Project Management Software",
-        "GPS Fleet Tracking System",
-        "Climate-Controlled Storage (5,000 sq ft)",
-        "Equipment Maintenance Workshop"
-    ];
-
     return (
         <>
             <SEO pageTitle="Our Facilities" />        
@@ -147,27 +136,6 @@ const FacilitiesPage = () => {
                                 </div>
                             </div>
                         ))}
-                    </div>
-
-                    {/* Capabilities */}
-                    <div className="row">
-                        <div className="col-xl-12">
-                            <div className="about__one-title text-center mb-40">
-                                <h3>Our Capabilities</h3>
-                            </div>
-                        </div>
-                        <div className="col-xl-12">
-                            <div className="row gy-3">
-                                {capabilities.map((capability, idx) => (
-                                    <div key={idx} className="col-xl-6 col-lg-6">
-                                        <div className="why-choose-us__one-single-feature">
-                                            <i className="fas fa-check-double"></i>
-                                            <span>{capability}</span>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
                     </div>
 
                     {/* Contact CTA */}
