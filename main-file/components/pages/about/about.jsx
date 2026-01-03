@@ -1,10 +1,5 @@
 "use client";
 import { useTranslations } from 'next-intl';
-import brand1 from "../../../public/assets/img/brand/brand-1.png";
-import brand2 from "../../../public/assets/img/brand/brand-2.png";
-import brand3 from "../../../public/assets/img/brand/brand-3.png";
-import brand4 from "../../../public/assets/img/brand/brand-4.png";
-import brand5 from "../../../public/assets/img/brand/brand-5.png";
 import about1 from "../../../public/assets/img/about/about-1.png";
 import about2 from "../../../public/assets/img/about/about-2.png";
 import Link from "next/link";
@@ -63,52 +58,6 @@ const AboutMain = () => {
                                 </div>
                             </div>
                             <Link href="/contact" className="btn-one">Get In Touch<i className="fas fa-arrow-right"></i></Link>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div className="brand__area section-padding pt-0">
-            <div className="container">
-                <div className="row">
-                    <div className="col-xl-12">
-                        <div className="text__slider">
-                            <div className="text-slide">
-                                <div className="sliders scroll">
-                                    <div className="brand__area-item">
-                                        <img src={brand1.src} alt="image" />
-                                    </div>
-                                    <div className="brand__area-item">
-                                        <img src={brand2.src} alt="image" />
-                                    </div>
-                                    <div className="brand__area-item">
-                                        <img src={brand3.src} alt="image" />
-                                    </div>
-                                    <div className="brand__area-item">
-                                        <img src={brand4.src} alt="image" />
-                                    </div>
-                                    <div className="brand__area-item">
-                                        <img src={brand5.src} alt="image" />
-                                    </div>
-                                </div>
-                                <div className="sliders scroll">
-                                    <div className="brand__area-item">
-                                        <img src={brand1.src} alt="image" />
-                                    </div>
-                                    <div className="brand__area-item">
-                                        <img src={brand2.src} alt="image" />
-                                    </div>
-                                    <div className="brand__area-item">
-                                        <img src={brand3.src} alt="image" />
-                                    </div>
-                                    <div className="brand__area-item">
-                                        <img src={brand4.src} alt="image" />
-                                    </div>
-                                    <div className="brand__area-item">
-                                        <img src={brand5.src} alt="image" />
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
