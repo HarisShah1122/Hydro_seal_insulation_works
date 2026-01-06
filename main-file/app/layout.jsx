@@ -39,8 +39,8 @@ export const metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Hydro Seal Insulation Works',
-        description: 'Professional Insulation & Waterproofing Solutions in Al Ain, Abu Dhabi',
+    title: 'Hydro Seal Insulation Works',
+    description: 'Professional Insulation & Waterproofing Solutions in Al Ain, Abu Dhabi',
         images: ['/assets/img/logo/hydroseal logo.jpg'],
     },
     robots: {
@@ -55,7 +55,7 @@ export const metadata = {
         },
     },
     verification: {
-        google: 'googlea7bd76da0ee48a90',
+        google: 'OW64cZfig2N_Zd8sCE4CQghwk3VsvMKGqPPAKqs-BAw',
     },
     icons: {
         icon: [
@@ -76,7 +76,7 @@ export default async function RootLayout({ children }) {
         <html lang={locale} dir={isRTL ? 'rtl' : 'ltr'} className={locale}>
             <head>
                 <link rel="canonical" href="https://hydrosealinsulation.ae" />
-                <meta name="google-site-verification" content="googlea7bd76da0ee48a90" />
+                <meta name="google-site-verification" content="OW64cZfig2N_Zd8sCE4CQghwk3VsvMKGqPPAKqs-BAw" />
                 <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
                 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
                 {isRTL && (
