@@ -57,6 +57,9 @@ export const metadata = {
     verification: {
         google: 'OW64cZfig2N_Zd8sCE4CQghwk3VsvMKGqPPAKqs-BAw',
     },
+    other: {
+        'google-site-verification': 'OW64cZfig2N_Zd8sCE4CQghwk3VsvMKGqPPAKqs-BAw',
+    },
     icons: {
         icon: [
             { url: '/assets/img/logo/hydroseal logo.jpg', sizes: '16x16', type: 'image/jpg' },
