@@ -4,7 +4,7 @@ import useScrollToTop from "./use-scroll-to-top";
 
 const ScrollToTop = () => {
     const { stick, onClickHandler } = useScrollToTop();
-    const phoneNumber = "+971528595217"; // WhatsApp phone number
+    const phoneNumber = "+971527571873"; // WhatsApp phone number
     
     useEffect(() => {
         const scrollPath = document.querySelector(".scroll-up path");

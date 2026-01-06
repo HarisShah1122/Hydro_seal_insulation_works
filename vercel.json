@@ -1,6 +1,7 @@
 {
-  "buildCommand": "npm ci && npm run build",
-  "installCommand": "npm ci",
-  "framework": "nextjs"
+  "buildCommand": "cd main-file && npm ci && npm run build",
+  "installCommand": "cd main-file && npm ci",
+  "framework": "nextjs",
+  "rootDirectory": "main-file"
 }
 
