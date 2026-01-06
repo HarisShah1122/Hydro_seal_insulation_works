@@ -24,9 +24,10 @@ export const config = {
      * - _next/static (static files)
      * - _next/image (image optimization files)
      * - favicon.ico (favicon file)
+     * - google verification files
      * - files with extensions (static assets)
      */
-    '/((?!api|_next/static|_next/image|favicon.ico|.*\\..*).*)',
+    '/((?!api|_next/static|_next/image|favicon.ico|google.*\\.html|.*\\..*).*)',
   ],
 };
 
