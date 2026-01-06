@@ -75,8 +75,8 @@ export default async function RootLayout({ children }) {
     return (
         <html lang={locale} dir={isRTL ? 'rtl' : 'ltr'} className={locale}>
             <head>
-                <link rel="canonical" href="https://hydrosealinsulation.ae" />
                 <meta name="google-site-verification" content="OW64cZfig2N_Zd8sCE4CQghwk3VsvMKGqPPAKqs-BAw" />
+                <link rel="canonical" href="https://hydrosealinsulation.ae" />
                 <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
                 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
                 {isRTL && (
