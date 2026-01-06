@@ -24,16 +24,6 @@ const nextConfig = {
   // Ensure compatibility
   trailingSlash: false,
   reactStrictMode: false,
-  
-  // Rewrites to serve Google verification file
-  async rewrites() {
-    return [
-      {
-        source: '/googlea7bd76da0ee48a90.html',
-        destination: '/api/google-verify',
-      },
-    ];
-  },
 };
 
 export default withNextIntl(nextConfig);
