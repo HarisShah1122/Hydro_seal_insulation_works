@@ -6,7 +6,7 @@
   "rewrites": [
     {
       "source": "/googlea7bd76da0ee48a90.html",
-      "destination": "/googlea7bd76da0ee48a90"
+      "destination": "/api/google-verify"
     }
   ]
 }

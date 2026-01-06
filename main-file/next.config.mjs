@@ -25,12 +25,12 @@ const nextConfig = {
   trailingSlash: false,
   reactStrictMode: false,
   
-  // Rewrite Google verification file to route handler
+  // Rewrite Google verification file to API route
   async rewrites() {
     return [
       {
         source: '/googlea7bd76da0ee48a90.html',
-        destination: '/googlea7bd76da0ee48a90',
+        destination: '/api/google-verify',
       },
     ];
   },
