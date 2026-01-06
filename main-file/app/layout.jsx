@@ -15,10 +15,9 @@ export const metadata = {
     publisher: 'Hydro Seal Insulation Works',
     metadataBase: new URL('https://hydrosealinsulation.ae'),
     alternates: {
-        canonical: '/',
         languages: {
-            'en': '/en',
-            'ar': '/ar',
+            'en': 'https://hydrosealinsulation.ae',
+            'ar': 'https://hydrosealinsulation.ae/ar',
         },
     },
     openGraph: {
@@ -62,11 +61,18 @@ export const metadata = {
     },
     icons: {
         icon: [
-            { url: '/assets/img/logo/hydroseal logo.jpg', sizes: '16x16', type: 'image/jpg' },
-            { url: '/assets/img/logo/hydroseal logo.jpg', sizes: '32x32', type: 'image/jpg' }
+            { url: '/favicon.jpg', sizes: '32x32', type: 'image/jpeg' },
+            { url: '/favicon.jpg', sizes: '16x16', type: 'image/jpeg' },
+            { url: '/assets/img/logo/hydroseal logo.jpg', sizes: '192x192', type: 'image/jpeg' },
+            { url: '/assets/img/logo/hydroseal logo.jpg', sizes: '512x512', type: 'image/jpeg' }
         ],
-        shortcut: '/assets/img/logo/hydroseal logo.jpg',
-        apple: '/assets/img/logo/hydroseal logo.jpg'
+        shortcut: '/favicon.jpg',
+        apple: [
+            { url: '/assets/img/logo/hydroseal logo.jpg', sizes: '180x180', type: 'image/jpeg' }
+        ],
+        other: [
+            { rel: 'mask-icon', url: '/assets/img/logo/hydroseal logo.jpg', color: '#000000' }
+        ]
     }
 };
 
@@ -79,7 +85,6 @@ export default async function RootLayout({ children }) {
         <html lang={locale} dir={isRTL ? 'rtl' : 'ltr'} className={locale}>
             <head>
                 <meta name="google-site-verification" content="OW64cZfig2N_Zd8sCE4CQghwk3VsvMKGqPPAKqs-BAw" />
-                <link rel="canonical" href="https://hydrosealinsulation.ae" />
                 <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
                 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
                 {isRTL && (
