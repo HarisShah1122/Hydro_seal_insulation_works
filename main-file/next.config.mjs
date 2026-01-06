@@ -24,6 +24,16 @@ const nextConfig = {
   // Ensure compatibility
   trailingSlash: false,
   reactStrictMode: false,
+  
+  // Rewrite Google verification file to route handler
+  async rewrites() {
+    return [
+      {
+        source: '/googlea7bd76da0ee48a90.html',
+        destination: '/googlea7bd76da0ee48a90',
+      },
+    ];
+  },
 };
 
 export default withNextIntl(nextConfig);

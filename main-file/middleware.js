@@ -27,7 +27,7 @@ export const config = {
      * - google verification files
      * - files with extensions (static assets)
      */
-    '/((?!api|_next/static|_next/image|favicon.ico|google.*\\.html|.*\\..*).*)',
+    '/((?!api|_next/static|_next/image|favicon.ico|googlea7bd76da0ee48a90\\.html|.*\\..*).*)',
   ],
 };
 
