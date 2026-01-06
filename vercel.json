@@ -2,6 +2,12 @@
   "buildCommand": "cd main-file && npm ci && npm run build",
   "installCommand": "cd main-file && npm ci",
   "framework": "nextjs",
-  "rootDirectory": "main-file"
+  "rootDirectory": "main-file",
+  "rewrites": [
+    {
+      "source": "/googlea7bd76da0ee48a90.html",
+      "destination": "/googlea7bd76da0ee48a90"
+    }
+  ]
 }
 
