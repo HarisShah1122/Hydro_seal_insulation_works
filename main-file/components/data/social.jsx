@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import React from 'react';
 
+// Social media links updated - Facebook, TikTok, LinkedIn
+
 const Social = () => {
     return (
         <>
